@@ -1,0 +1,51 @@
+{
+  "name": "Savory Sriracha Oatmeal",
+  "ingredients": [
+    {
+      "name": "rolled oats",
+      "quantity": 1,
+      "unit": "cup"
+    },
+    {
+      "name": "water",
+      "quantity": 2,
+      "unit": "cup"
+    },
+    {
+      "name": "cashews",
+      "quantity": 0.25,
+      "unit": "cup"
+    },
+    {
+      "name": "soy sauce",
+      "quantity": 1,
+      "unit": "tbs"
+    },
+    {
+      "name": "sriracha",
+      "quantity": 1,
+      "unit": "tbs"
+    },
+    {
+      "name": "fresh rosemary",
+      "quantity": 2,
+      "unit": "ts"
+    },
+    {
+      "name": "garlic",
+      "quantity": 1,
+      "unit": "item",
+      "state": "minced"
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "tbs"
+    },
+    {
+      "name": "eggs",
+      "quantity": 2,
+      "unit": "item"
+    }
+  ]
+}

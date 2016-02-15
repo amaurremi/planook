@@ -8,23 +8,38 @@ trait RecipeModule {
   case object Gram extends IngredientUnit
   case object MilliLiter extends IngredientUnit
   case object Item extends IngredientUnit
+  case object Cup extends IngredientUnit
+  case object TableSpoon extends IngredientUnit
+  case object TeaSpoon extends IngredientUnit
 
-  case class Amount(quantity: Int, amount: IngredientUnit) {
-    def multiply(n: Int): Amount = copy(quantity = n * quantity)
+  case class Amount(quantity: Double, unit: IngredientUnit) {
+
+    def multiply(n: Int): Amount = {
+      val newQuantity: Double = n * quantity
+      if (unit == TeaSpoon && newQuantity % 3 == 0)
+        Amount(newQuantity / 3, TableSpoon)
+      else copy(quantity = newQuantity)
+    }
   }
 
   case class Ingredient(
     name: String,
-    amount: Amount
-  )
+    amount: Amount,
+    state: Option[String]
+  ) {
+    def multiply(n: Int): Ingredient = {
+      copy(amount = amount multiply n)
+    }
+  }
 
   case class Recipe(
     ingredients: Seq[Ingredient],
-    cookingTime: Period
+    cookingTime: Period,
+    portions: Int
   ) {
 
-    def multiplyPortions(n: Int): Recipe = {
-      val newIngredients = ingredients map { i => i.copy(amount = i.amount multiply n) }
+    def getPoritions(n: Int): Recipe = {
+      val newIngredients = ingredients map { _ multiply (n / portions) }
       copy(ingredients = newIngredients)
     }
   }

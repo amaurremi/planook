@@ -1,10 +1,12 @@
 package planook
 
 import planook.RequestModule.{Meal, MealRequest}
+
 import scala.collection.breakOut
 
 object RecipeFinder extends RecipeModule {
 
+  // tip: create recipes here: http://www.objgen.com/json
   // every recipe is stored in a "normalized" format, for one portion
   val breakfasts: Seq[Recipe] = ???
   val entrees: Seq[Recipe] = ???
@@ -13,7 +15,7 @@ object RecipeFinder extends RecipeModule {
     import mealRequest._
     val db = if (mealType == Meal.Breakfast) breakfasts else entrees
     randomRecipes(num, db) map {
-      _.multiplyPortions(people * days)
+      _.getPoritions(people * days)
     }
   }
 
