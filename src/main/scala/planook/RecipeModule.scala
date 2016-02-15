@@ -9,7 +9,9 @@ trait RecipeModule {
   case object MilliLiter extends IngredientUnit
   case object Item extends IngredientUnit
 
-  case class Amount(quantity: Int, amount: IngredientUnit)
+  case class Amount(quantity: Int, amount: IngredientUnit) {
+    def multiply(n: Int): Amount = copy(quantity = n * quantity)
+  }
 
   case class Ingredient(
     name: String,
@@ -18,7 +20,13 @@ trait RecipeModule {
 
   case class Recipe(
     ingredients: Seq[Ingredient],
-    time: Period
-  )
+    cookingTime: Period
+  ) {
+
+    def multiplyPortions(n: Int): Recipe = {
+      val newIngredients = ingredients map { i => i.copy(amount = i.amount multiply n) }
+      copy(ingredients = newIngredients)
+    }
+  }
 }
 

@@ -13,8 +13,8 @@ object RequestModule {
 
   case class MealRequest(
     mealType: Meal,
+    people: Int,
     days: Int,
-    cookingTimes: Int,
-    people: Int
+    num: Int
   )
 }
