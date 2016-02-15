@@ -4,12 +4,12 @@ import planook.RequestModule.{Meal, MealRequest}
 
 import scala.collection.breakOut
 
-object RecipeFinder extends RecipeModule {
+object RecipeFinder extends RecipeModule with Json {
 
   // tip: create recipe json files here: http://www.objgen.com/json
   // every recipe is stored in a "normalized" format, for one portion
-  val breakfasts: Seq[Recipe] = ???
-  val entrees: Seq[Recipe] = ???
+  val breakfasts: Seq[Recipe] = parseJsonFiles("breakfast")
+  val entrees: Seq[Recipe] = parseJsonFiles("entree")
 
   def findRecipes(mealRequest: MealRequest): Seq[Recipe] = {
     import mealRequest._
