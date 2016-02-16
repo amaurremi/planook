@@ -34,8 +34,12 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
         val name = ingr.name
         oldMap get name match {
           case Some(a@(unit, quantity)) =>
-            val (newUnit, quantity1, quantity2) = unifyUnits(a, (ingr.unit, ingr.quantity))
-            oldMap + (normalize(name) -> (newUnit, quantity1 + quantity2))
+            unifyUnits(a, (ingr.unit, ingr.quantity)) match {
+              case Some((newUnit, quantity1, quantity2)) =>
+                oldMap + (normalize(name) -> (newUnit, quantity1 + quantity2))
+              case None                                  =>
+                throw new UnsupportedOperationException(s"can't unify $quantity $unit and ${ingr.quantity} ${ingr.unit} of $name")
+            }
           case None                   =>
             oldMap + (normalize(name) -> (ingr.unit, ingr.quantity))
         }
@@ -57,11 +61,13 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
   }
 
   private[this] def isProduce(str: String): Boolean =
-    Data.produceWithPlural contains normalize(str)
+    Data.produceWithPlural contains normalizeForSearch(str)
 
-  def normalize(str: String): String = {
-    str.trim.toLowerCase.replaceAll("[-/]", " ") replaceFirst("^fresh ", "")
-  }
+  def normalize(str: String): String =
+    str.trim.toLowerCase.replaceAll("[-/]", " ")
+
+  def normalizeForSearch(str: String): String =
+    normalize(str) replaceFirst("^fresh ", "")
 
   /**
     * Chooses `n` different random recipes from a data base

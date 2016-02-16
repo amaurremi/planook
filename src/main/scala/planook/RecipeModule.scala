@@ -32,16 +32,16 @@ trait RecipeModule {
     def isVolume(unit: IngredientUnit): Boolean =
       Seq(MilliLiter, Cup, TableSpoon, TeaSpoon, Can, Pint) contains unit
 
-    def unifyUnits(amount1: Amount, amount2: Amount): (IngredientUnit, Double, Double) = {
+    def unifyUnits(amount1: Amount, amount2: Amount): Option[(IngredientUnit, Double, Double)] = {
       val (u1, q1) = amount1
       val (u2, q2) = amount2
       if (u1 == u2)
-        (u1, q1, q2)
+        Some(u1, q1, q2)
       else if (isMass(u1) && isMass(u2))
-        (Gram, toGrams(u1, q1), toGrams(u2, q2))
+        Some(Gram, toGrams(u1, q1), toGrams(u2, q2))
       else if (isVolume(u1) && isVolume(u2))
-        (MilliLiter, toMl(u1, q1), toMl(u2, q2))
-      else throw new UnsupportedOperationException(s"can't unify $u1 and $u2")
+        Some(MilliLiter, toMl(u1, q1), toMl(u2, q2))
+      else None
     }
 
     def toGrams(unit: IngredientUnit, quantity: Double): Double = {
@@ -86,7 +86,7 @@ trait RecipeModule {
     override def toString = {
       val unitStr = if (unit == Item) "" else unit.toString + " "
       val quantityStr = new DecimalFormat("#.#") format quantity
-      s"$quantityStr $unitStr$name" + (if (state.isDefined) s", ${state.get}" else "")
+      s"$name, $quantityStr $unitStr" + (if (state.isDefined) s", ${state.get}" else "")
     }
   }
 
