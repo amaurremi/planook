@@ -26,7 +26,7 @@ object Main {
       * where m ∈ {b, w, l, d} for breakfast, weekend breakfast, lunch, or dinner
       *       p ∈ ℕ is the number of people who will eat the meal
       *       d ∈ ℕ is the number of days for which the meal is needed
-      *       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal during D
+      *       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal during d
       */
     implicit val mealRequestRead: scopt.Read[MealRequest] =
       Read.reads(
@@ -51,6 +51,6 @@ object Main {
               | where m ∈ {'b', 'w', 'l', 'd'} for breakfast, weekend breakfast, lunch, or dinner
               |       p ∈ ℕ is the number of people who will eat the meal
               |       d ∈ ℕ is the number of days for which the meal is needed
-              |       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal during D"""
+              |       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal during d"""
   }
 }
