@@ -1,0 +1,45 @@
+{
+  "recipe-name": "Penne With Broccoli",
+  "other-ingredients": [
+    "coarse salt"
+  ],
+  "url": "http://www.marthastewart.com/314826/penne-with-broccoli",
+  "portions": 1,
+  "description": "Bring a medium saucepan of salted water to a boil. Add penne, and cook 2 minutes less than package instructions for al dente; add broccoli. Cook 2 minutes or until penne is al dente and broccoli is bright green. Reserving 1/2 cup pasta water, drain pasta and broccoli; set aside.\\nIn the same pan, heat oil over medium. Add onion and garlic; cook, stirring constantly, until onion is tender and lightly browned, about 5 minutes. Add pasta water as needed to help loosen any browned bits from bottom of pan.\\nAdd penne and broccoli, and cook until warmed through; season with salt and pepper. Transfer pasta mixture to a serving dish. Top with ricotta; season with salt and pepper.",
+  "time": 20,
+  "in": [
+    {
+      "n": "penne or other short pasta",
+      "q": 0.75,
+      "u": "cup"
+    },
+    {
+      "n": "broccoli florets",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "olive oil",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "small red onion",
+      "q": 0.5,
+      "u": "item",
+      "s": "cut lengthwise into 1/2-inch-thick slices"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 1,
+      "u": "item",
+      "s": "thinly sliced"
+    },
+    {
+      "n": "ricotta cheese",
+      "q": 0.25,
+      "u": "cup",
+      "s": "room temperature"
+    }
+  ]
+}
