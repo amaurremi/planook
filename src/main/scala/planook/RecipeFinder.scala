@@ -7,7 +7,6 @@ import scala.collection.breakOut
 object RecipeFinder extends RecipeModule with JsonRecipe {
 
   // tip: create recipe json files here: http://www.objgen.com/json
-  // every recipe is stored in a "normalized" format, for one portion
   lazy val breakfasts: Seq[Recipe] = parseJsonFiles("breakfast")
   lazy val weekendBreakfasts: Seq[Recipe] = parseJsonFiles("weekend-breakfast")
   lazy val entrees: Seq[Recipe] = parseJsonFiles("entree")
