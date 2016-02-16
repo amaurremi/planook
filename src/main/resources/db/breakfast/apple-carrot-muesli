@@ -1,0 +1,45 @@
+{
+  "recipe-name": "Apple carrot muesli",
+  "other-ingredients": "",
+  "url": "https://www.freeletics.com/en/nutrition/guides/burn_fat/recipes/apple_carrot_muesli",
+  "portions": 1,
+  "description": "\"Preparation\\n1.Peel carrots, cut in half lengthwise, cut into slices.\\n2.Wash apple, rub dry, quarter, core and dice.\\n3.Squeeze orange.\\nCrush Brazil nuts with the flat side of a large knife blade, chop if necessary.\\n5Mix oatmeal, carrot slices, diced apple, orange juice, raisins, brazil nuts and yogurt.\\n\"",
+  "time": 5,
+  "in": [
+    {
+      "n": "oatmeal",
+      "q": 50,
+      "u": "g"
+    },
+    {
+      "n": "carrot",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "apple",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "orange",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "raisins",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "brazil nuts",
+      "q": 4,
+      "u": "item"
+    },
+    {
+      "n": "greek yogurt",
+      "q": 200,
+      "u": "g"
+    }
+  ]
+}
