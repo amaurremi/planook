@@ -1,0 +1,47 @@
+{
+  "recipe-name": "Poached Eggs in Tomato Sauce",
+  "url": "http://www.marthastewart.com/258542/poached-eggs-in-tomato-sauce",
+  "portions": 4,
+  "description": "Transfer tomatoes and their juices to the jar of a blender. Blend until tomatoes are coarsely chopped; set aside. \nIn a small skillet, heat olive oil over medium-high heat. Add garlic and crushed red pepper; cook, stirring, until lightly browned, about 1 minute. Add tomato sauce and bring to a boil; season with salt and pepper. Reduce heat to a simmer and cook for 20 minutes. \nGently crack eggs into tomato mixture, cover, and let cook 5 minutes. Remove skillet from heat, uncover, and let stand 2 to 3 minutes. \nTransfer each egg to a piece of toast. Spoon over sauce, garnish with cheese, and season with salt and pepper; serve immediately.",
+  "time": 40,
+  "other-ingredients": [
+    "parmesan cheese",
+    "red pepper flakes"
+  ],
+  "in": [
+    {
+      "n": "eggs",
+      "q": 4,
+      "u": "item"
+    },
+    {
+      "n": "whole plum tomatoes",
+      "q": 28,
+      "u": "oz",
+      "s": "(can)"
+    },
+    {
+      "n": "olive oil",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "garlic",
+      "q": 2,
+      "u": "item",
+      "s": "minced"
+    },
+    {
+      "n": "tomatoes",
+      "q": 2,
+      "u": "item",
+      "s": "thinly sliced"
+    },
+    {
+      "n": "country bread",
+      "q": 4,
+      "u": "slice",
+      "s": "toasted, for serving"
+    }
+  ]
+}

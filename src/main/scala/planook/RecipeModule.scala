@@ -17,6 +17,8 @@ trait RecipeModule {
     val Cup = Value("cup")
     val TableSpoon = Value("tbs")
     val TeaSpoon = Value("ts")
+    val Can = Value("can")
+    val Slice = Value("slice")
   }
 
   import IngredientUnit._
