@@ -1,0 +1,64 @@
+{
+  "name": "Breakfast Pizza",
+  "in": [
+    {
+      "n": "all purpose flour",
+      "u": "cup",
+      "q": 1.25
+    },
+    {
+      "n": "water",
+      "u": "cup",
+      "q": 0.5
+    },
+    {
+      "n": "instant yeast",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "salt",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "sugar",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "oil",
+      "u": "tbs",
+      "q": 1
+    },
+    {
+      "q": 3,
+      "u": "tbs",
+      "n": "pesto (or EVOO + minced garlic)"
+    },
+    {
+      "q": 0.3,
+      "u": "cup",
+      "n": "cherry tomatoes"
+    },
+    {
+      "n": "eggs",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "q": 5,
+      "u": "item",
+      "n": "mushrooms"
+    }
+  ],
+  "other-ingredients": [
+    "olive oil",
+    "salt",
+    "pepper"
+  ],
+  "url": "http://peegaw.tumblr.com/post/10762470313/making-breakfast-pizza",
+  "portions": 2,
+  "time": "100",
+  "description": "Pour warm water in a medium size bowl.\\nAdd salt and yeast and stir around.\\nMix in the flour. Gradually add more flour until the dough comes together enough for you to start kneading it.\\nKnead for a couple of minutes, add additional flour if it sticks to your hands.\\nPut the dough back in the bowl and drizzle it with the oil.\\nCover the bowl with plastic wrap and set it in a warm place for 30 minutes - 1 hour.\\nPreheat the oven to the highest possible temperature (450-500°F).\\nCrack the eggs into separate ramekins or bowl.\\nThis is to ensure that the yolks won’t break and you can take out some of the whites so that it won’t flow all over your pizza.\\nSlice the mushroom and cut the cherry tomatoes into halves.\\nRoll out the pizza dough.\\nStretch and flatten the dough until you get the desired size and thickness that you prefer and move it to a baking pan covered with parchment paper.\\nSpread the pesto or garlic-oil on top.\\nScatter the cherry tomatoes and sliced mushroom on top.\\nDrizzle with olive oil and bake for about 10 mins until the tomatoes are soft and the pizza edges are slightly burnt\\nPlace the eggs  on top of the pizza and season with salt and black pepper.\\nServe while still warm. Enjoy!"
+}
