@@ -46,6 +46,7 @@ trait RecipeModule {
   case class Recipe(
    name: String,
    ingredients: Seq[Ingredient],
+   otherIngredients: Seq[String],
    cookingTime: Period,
    portions: Int,
    url: String,
@@ -66,10 +67,11 @@ trait RecipeModule {
         for {
           n <- (c --\ "recipe-name").as[String]
           i <- (c --\ "in").as[List[Ingredient]]
+          o <- (c --\ "other-ingredients").as[Option[List[String]]]
           t <- (c --\ "time").as[Int]
           p <- (c --\ "portions").as[Int]
           u <- (c --\ "url").as[String]
           d <- (c --\ "description").as[String]
-        } yield Recipe(n, i, new Period(0, t, 0, 0), p, u, d)
+        } yield Recipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, u, d)
     )
 }
