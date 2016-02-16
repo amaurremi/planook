@@ -1,0 +1,94 @@
+{
+  "recipe-name": "Blackened Salmon With Green Avocado Salad",
+  "other-ingredients": [
+    "salt",
+    "pepper"
+  ],
+  "url": "http://www.donalskehan.com/recipes/blackened-salmon-with-green-goddess-avocado-salad/",
+  "portions": 4,
+  "description": "Preheat the grill to high. Mix the paprika, chilli powder, cayenne pepper and garlic powder on a flat plate. Drizzle the salmon fillets with olive oil or melted butter and then dip the tops in the spice mix. \nPlace on a grill tray and cook under the grill for about 10 minutes until the top is slightly charred and the fish is cooked all the way through.\nWhile the fish is cooking, blitz the ingredients for the dressing in a hand blender until smooth. Season with sea salt and ground black pepper to taste.\nOn a large serving platter, arrange the romaine lettuce, radishes, avocados and spring onions and drizzle over the dressing. Place the salmon fillets on top and serve straight to the table.",
+  "time": 30,
+  "in": [
+    {
+      "n": "ground paprika",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "chili powder",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "cayenne pepper",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "garlic powder",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "salmon fillets, skin on",
+      "q": 4,
+      "u": "item"
+    },
+    {
+      "n": "olive oil",
+      "q": 3,
+      "u": "tbs"
+    },
+    {
+      "n": "romaine lettuce",
+      "q": 1,
+      "u": "item",
+      "s": "leaves separated"
+    },
+    {
+      "n": "radish",
+      "q": 6,
+      "u": "item",
+      "s": "trimmed and thinly sliced"
+    },
+    {
+      "n": "avocado",
+      "q": 2,
+      "u": "item",
+      "s": "stoned and sliced"
+    },
+    {
+      "n": "spring onions",
+      "q": 6,
+      "u": "item",
+      "s": "trimmed and finely sliced"
+    },
+    {
+      "n": "chives",
+      "q": 1,
+      "u": "handful",
+      "s": "snipped"
+    },
+    {
+      "n": "buttermilk",
+      "q": 3,
+      "u": "tbs"
+    },
+    {
+      "n": "olive oil",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "white wine vinegar",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "garlic clove",
+      "q": 1,
+      "u": "item",
+      "s": "peeled and finely chopped"
+    }
+  ]
+}
