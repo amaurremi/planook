@@ -7,8 +7,8 @@
   "in": [
     {
       "n": "quinoa",
-      "q": null,
-      "u": "1",
+      "q": 1,
+      "u": "cup",
       "s": "soaked if possible"
     },
     {
@@ -18,8 +18,8 @@
     },
     {
       "n": "asparagus",
-      "q": null,
-      "u": "1"
+      "q": 1,
+      "u": "bunch"
     },
     {
       "n": "shelled peas, can be frozen",
