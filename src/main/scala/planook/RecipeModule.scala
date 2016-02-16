@@ -73,7 +73,7 @@ trait RecipeModule {
    unit: IngredientUnit,
    state: Option[String]
   ) {
-    def multiply(n: Int): Ingredient = {
+    def multiply(n: Double): Ingredient = {
       val newQuantity = n * quantity
       if (unit == TeaSpoon && newQuantity % 3 == 0)
         copy(quantity = newQuantity / 3, unit = TableSpoon)
@@ -110,7 +110,7 @@ trait RecipeModule {
 
     def getPoritions(n: Int): Recipe = {
       val newIngredients = ingredients map {
-        _ multiply (n / portions)
+        _ multiply (n.toDouble / portions)
       }
       copy(ingredients = newIngredients, portions = n)
     }
