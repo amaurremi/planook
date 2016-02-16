@@ -45,7 +45,7 @@ trait RecipeModule {
     def toGrams(unit: IngredientUnit, quantity: Double): Double = {
       assert(isMass(unit), s"can't convert $unit to grams")
       val mult = unit match {
-        case Gram => 1
+        case Gram  => 1
         case Pound => 454
         case Ounce => 28
       }
