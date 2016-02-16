@@ -9,9 +9,13 @@ object Main {
     import RecipeFinder._
     parser.parse(args, CmdOptions()) foreach { options =>
       val recipes = options.requests flatMap findRecipes
-      println(recipes)
-      println("\nShopping List:")
-      println(shoppingList(recipes) mkString "\n")
+      val output = s"""
+          |${recipes mkString "\n***\n"}
+          |
+          |Shopping List:
+          |${shoppingList(recipes) mkString "\n"}
+        """.stripMargin
+      println(output)
     }
   }
 
