@@ -64,7 +64,7 @@ trait RecipeModule {
     DecodeJson(
       c =>
         for {
-          n <- (c -- "name").as[String]
+          n <- (c -- "recipe-name").as[String]
           i <- (c -- "ingredients").as[List[Ingredient]]
           t <- (c -- "time").as[Int]
           p <- (c -- "portions").as[Int]
