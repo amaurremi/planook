@@ -2,12 +2,8 @@
   "recipe-name": "Hashbrowns",
   "other-ingredients": [
     "salt",
-    [
-      "pepper"
-    ],
-    [
-      "cayenne pepper"
-    ]
+    "pepper",
+    "cayenne pepper"
   ],
   "url": "http://allrecipes.com/recipe/220520/classic-hash-browns/",
   "portions": 1,
