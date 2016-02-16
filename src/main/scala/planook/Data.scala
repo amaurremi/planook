@@ -12,7 +12,7 @@ object Data {
     "honey melon", "mushroom", "sweet potato", "cauliflower", "cantaloupe", "grapefruit", "eggplant",
     "aubergine", "kiwi", "papaya", "mango", "onion", "asparagus", "red onion", "cabbage", "red cabbage",
     "pineapple", "sweet corn", "avocado", "arugula", "beet", "blackberry", "baby bok choy", "bok choy",
-    "baby spinach", "brussels sprouts", "green cabbage", "savoy cabbage", "chard", "cilantro", "chili",
+    "baby spinach", "brussels sprout", "green cabbage", "savoy cabbage", "chard", "cilantro", "chili",
     "chili pepper", "dill", "fennel", "garlic", "ginger", "granny smith apple", "garlic clove", "grapefruit",
     "mint", "oregano", "rosemary", "thyme", "sage", "tarragon", "chives", "green kale", "leek", "lemon grass",
     "lemongrass", "lime", "micro green", "shiitake", "cherry", "paprika", "red paprika", "green paprika",
@@ -20,7 +20,7 @@ object Data {
     "parsley", "flat leaf parsley", "italian parsley", "curly parsley", "asian pear", "anjou pear", "green pepper",
     "red pepper", "jalapeno", "jalapeno pepper", "orange pepper", "poblano pepper", "russet potato",
     "fingerling potato", "radicchio", "radish", "iceberg", "iceberg lettuce", "iceberg salad", "scallion", "shallot",
-    "zucchini", "grape tomato", "watercress", "yuca", "red bell pepper"
+    "zucchini", "grape tomato", "watercress", "yuca", "red bell pepper", "sprout"
   )
 
   lazy val produceWithPlural: Set[String] =

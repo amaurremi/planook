@@ -1,0 +1,117 @@
+{
+  "recipe-name": "Spring Abundance Bowl",
+  "url": "http://www.mynewroots.org/site/2014/04/spring-abundance-bowl/",
+  "portions": 4,
+  "description": "Rinse quinoa well, drain and add to a pot with 1 ¾ cup water (2 cups if not soaked) and salt. Bring to a boil, cover and reduce to simmer until water is absorbed, 15-20 minutes. Zest 1 lemon into the pot, fluff with a fork and set aside.\\nWhile the quinoa is cooking, prep the vegetables. Grill or steam the asparagus. Shell the peas (if you want to steam them, add them to the pot of quinoa 3-4 minutes before cooking time is up). Slice avocado and spring onion. Make dressing.\\nTo serve, place ¼ of the cooked quinoa in a large bowl, add all veggies as desired, including the pickled radish, drizzle with dressing and a squeeze lemon juice. Season to taste. Enjoy.\\n\\nYogurt Dill Dressing:\\nWhisk all ingredients together and add water to thin to desired consistency. Season to taste. Store leftovers in the fridge for 3 days.\\n\\nPickled Radishes:\\nRemove the stem end of radishes, and slice them into very thin pieces. Set aside. In a measuring cup, combine vinegar, water, maple syrup, and salt. Stir well to dissolve salt.\\nPlace a handful of radish at the bottom of the jar and add a few peppercorns and one clove of garlic. Continue to stack the radishes, peppercorns and garlic until you’ve reached the top of the jar. Pour the liquid over, completely covering the contents of the jar, discarding any leftovers. Place an airtight lid on the jar, and place in the fridge. Can be enjoyed 24 hours later, for up to three weeks.",
+  "time": 60,
+  "in": [
+    {
+      "n": "quinoa",
+      "q": null,
+      "u": "1",
+      "s": "soaked if possible"
+    },
+    {
+      "n": "sea salt",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "asparagus",
+      "q": null,
+      "u": "1"
+    },
+    {
+      "n": "shelled peas, can be frozen",
+      "q": 2,
+      "u": "cup"
+    },
+    {
+      "n": "spring onion",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "avocado",
+      "q": 1,
+      "u": "2"
+    },
+    {
+      "n": "sprouts",
+      "q": 2,
+      "u": "handful"
+    },
+    {
+      "n": "lemon",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "yogurt",
+      "q": 150,
+      "u": "ml"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 1,
+      "u": "item",
+      "s": "finely minced"
+    },
+    {
+      "n": "dill",
+      "q": 3,
+      "u": "tbs",
+      "s": "chopped"
+    },
+    {
+      "n": "lemon juice",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "olive oil",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "honey or maple syrup",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "radishes",
+      "q": 1,
+      "u": "lb"
+    },
+    {
+      "n": "apple cider vinegar",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "water",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 3,
+      "u": "item"
+    },
+    {
+      "n": "honey or maple syrup",
+      "q": 2,
+      "u": "ts"
+    },
+    {
+      "n": "salt",
+      "q": 2,
+      "u": "ts"
+    },
+    {
+      "n": "black peppercorns",
+      "q": 1,
+      "u": "ts"
+    }
+  ]
+}
