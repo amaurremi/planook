@@ -7,7 +7,7 @@ object Main {
 
   def main(args: Array[String]) = {
     parser.parse(args, CmdOptions()) foreach { options =>
-      val recipeSeqs = options.requests map RecipeFinder.findRecipes
+      val recipeSeqs = options.requests flatMap RecipeFinder.findRecipes
       println(recipeSeqs)
     }
   }
@@ -48,7 +48,7 @@ object Main {
         opts add mealRequest
     } text """A meal request should be specified in a string as follows:
               | mpdn,
-              | where m ∈ {b, l, d} for breakfast, lunch, or dinner
+              | where m ∈ {'b', 'l', 'd'} for breakfast, lunch, or dinner
               |       p ∈ ℕ is the number of people who will eat the meal
               |       d ∈ ℕ is the number of days for which the meal is needed
               |       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal during D"""

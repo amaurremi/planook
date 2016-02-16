@@ -4,7 +4,7 @@ import planook.RequestModule.{Meal, MealRequest}
 
 import scala.collection.breakOut
 
-object RecipeFinder extends RecipeModule with Json {
+object RecipeFinder extends RecipeModule with JsonRecipe {
 
   // tip: create recipe json files here: http://www.objgen.com/json
   // every recipe is stored in a "normalized" format, for one portion
