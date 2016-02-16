@@ -23,7 +23,7 @@ object Main {
     /**
       * A meal request should be specified in a string as follows:
       * mpdn,
-      * where m ∈ {b, w, l, d} for breakfast, lunch, or dinner
+      * where m ∈ {b, w, l, d} for breakfast, weekend breakfast, lunch, or dinner
       *       p ∈ ℕ is the number of people who will eat the meal
       *       d ∈ ℕ is the number of days for which the meal is needed
       *       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal during D
