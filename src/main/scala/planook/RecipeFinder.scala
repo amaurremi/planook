@@ -40,11 +40,24 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
             oldMap + (normalize(name) -> (ingr.unit, ingr.quantity))
         }
     }
-    map map {
+    val toBuy = map map {
       case (name, (unit, quantity)) =>
         Ingredient(name, quantity, unit, None)
     }
+    toBuy.toList sortWith {
+      (i1, i2) =>
+        val prod1 = isProduce(i1.name)
+        val prod2 = isProduce(i2.name)
+        if (prod1 && !prod2)
+          true
+        else if (prod1 && prod2 || !prod1 && !prod2)
+          i1.name < i2.name
+        else false
+    }
   }
+
+  private[this] def isProduce(str: String): Boolean =
+    Data.produceWithPlugal contains normalize(str)
 
   def normalize(str: String): String = // todo better
     str.trim.toLowerCase.replaceAll("-/", " ")
