@@ -10,7 +10,9 @@ trait RecipeModule {
   object IngredientUnit extends Enumeration {
     type IngredientUnit = Value
     val Gram = Value("g")
+    val Pound = Value("lb")
     val MilliLiter = Value("ml")
+    val Ounce = Value("oz")
     val Item = Value("item")
     val Cup = Value("cup")
     val TableSpoon = Value("tbs")
