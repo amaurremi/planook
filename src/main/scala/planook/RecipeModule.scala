@@ -2,7 +2,7 @@ package planook
 
 import argonaut.Argonaut._
 import argonaut.DecodeJson
-import org.joda.time.{Period, Duration}
+import org.joda.time.Period
 
 trait RecipeModule {
 

@@ -1,8 +1,8 @@
 package planook
 
-import java.nio.file.{Path, Files, Paths}
+import java.nio.file.{Files, Path, Paths}
 
-import argonaut.{CursorHistory, Parse, Json}
+import argonaut.Parse
 
 import scala.collection.JavaConversions._
 import scala.collection.breakOut
