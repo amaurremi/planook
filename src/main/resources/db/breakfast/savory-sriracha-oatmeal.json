@@ -1,51 +1,51 @@
 {
   "recipe-name": "Savory Sriracha Oatmeal",
-  "ingredients": [
+  "in": [
     {
-      "name": "rolled oats",
-      "quantity": 1,
-      "unit": "cup"
+      "n": "rolled oats",
+      "q": 1,
+      "u": "cup"
     },
     {
-      "name": "water",
-      "quantity": 2,
-      "unit": "cup"
+      "n": "water",
+      "q": 2,
+      "u": "cup"
     },
     {
-      "name": "cashews",
-      "quantity": 0.25,
-      "unit": "cup"
+      "n": "cashews",
+      "q": 0.25,
+      "u": "cup"
     },
     {
-      "name": "soy sauce",
-      "quantity": 1,
-      "unit": "tbs"
+      "n": "soy sauce",
+      "q": 1,
+      "u": "tbs"
     },
     {
-      "name": "sriracha",
-      "quantity": 1,
-      "unit": "tbs"
+      "n": "sriracha",
+      "q": 1,
+      "u": "tbs"
     },
     {
-      "name": "fresh rosemary",
-      "quantity": 2,
-      "unit": "ts"
+      "n": "fresh rosemary",
+      "q": 2,
+      "u": "ts"
     },
     {
-      "name": "garlic",
-      "quantity": 1,
-      "unit": "item",
-      "state": "minced"
+      "n": "garlic",
+      "q": 1,
+      "u": "item",
+      "s": "minced"
     },
     {
-      "name": "olive oil",
-      "quantity": 2,
-      "unit": "tbs"
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
     },
     {
-      "name": "eggs",
-      "quantity": 2,
-      "unit": "item"
+      "n": "eggs",
+      "q": 2,
+      "u": "item"
     }
   ],
   "url": "http://blog.thesrirachacookbook.com/post/36525790552/savory-sriracha-oatmeal-recipe",
