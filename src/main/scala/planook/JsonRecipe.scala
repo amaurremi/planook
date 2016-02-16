@@ -10,7 +10,8 @@ import scala.collection.breakOut
 trait JsonRecipe extends RecipeModule {
 
   def parseJsonFiles(db: String): Seq[Recipe] = {
-    val files = Files.newDirectoryStream(Paths.get(s"db/$db"))
+    val path: Path = Paths.get(s"src/main/resources/db/$db")
+    val files = Files.newDirectoryStream(path)
     (files flatMap jsonRecipe)(breakOut)
   }
 
