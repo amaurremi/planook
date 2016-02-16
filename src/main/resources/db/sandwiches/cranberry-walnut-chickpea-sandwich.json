@@ -1,0 +1,72 @@
+{
+  "recipe-name": "Cranberry Walnut Chickpea Salad Sandwich",
+  "other-ingredients": [
+    "salt",
+    "pepper"
+  ],
+  "url": "http://www.simple-veganista.com/2013/11/cranberry-walnut-chickpea-salad-sandwic.html",
+  "portions": 6,
+  "description": "Start by mixing your dressing. In a small bowl combine tahini/mayo, vinegar, water and maple syrup. Set aside so the flavors come together. This can be made a day or two ahead and stored in the refrigerator until ready to use. Add a tad more water, or vinegar if you’re a vinegar lover, to thin out dressing as desired. If using vegan mayo, you may like to add 2 more tablespoons.\\nIn a medium to large bowl, add your garbanzo beans and roughly mash with a strong fork or potato masher. Add in celery, cranberries, nuts, scallions, salt, pepper and dressing, mix well. Serve at room temp or let chill in the refrigerator for an hour before serving.\\nServe on your favorite bread as a closed or open faced sandwich, or on a bed of leafy greens. You may even opt to simply enjoy the salad as is.",
+  "time": 20,
+  "in": [
+    {
+      "n": "garbanzo beans (chickpeas)",
+      "q": 3,
+      "u": "cup",
+      "s": "drained and rinsed"
+    },
+    {
+      "n": "celery",
+      "q": 1,
+      "u": "cup",
+      "s": "diced"
+    },
+    {
+      "n": "dried cranberries, or chopped fresh",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "walnuts or pecans",
+      "q": 0.5,
+      "u": "cup",
+      "s": "roughly chopped"
+    },
+    {
+      "n": "scallions",
+      "q": 0.5,
+      "u": "cup",
+      "s": "thinly sliced, white&green parts"
+    },
+    {
+      "n": "tahini",
+      "q": 6,
+      "u": "tbs"
+    },
+    {
+      "n": "champagne, white wine or cider vinegar",
+      "q": 4,
+      "u": "tbs"
+    },
+    {
+      "n": "water",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "maple syrup",
+      "q": 2,
+      "u": "ts"
+    },
+    {
+      "n": "lettuce",
+      "q": 1,
+      "u": "handful"
+    },
+    {
+      "n": "bread",
+      "q": 12,
+      "u": "slice"
+    }
+  ]
+}
