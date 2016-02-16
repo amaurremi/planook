@@ -1,47 +1,47 @@
 package planook
 
-import argonaut._
-import Argonaut._
-import com.github.nscala_time.time.Imports._
+import argonaut.Argonaut._
+import argonaut.DecodeJson
+import org.joda.time.{Period, Duration}
 
 trait RecipeModule {
 
-  sealed trait IngredientUnit
+  object IngredientUnit extends Enumeration {
+    type IngredientUnit = Value
+    val Gram = Value("g")
+    val MilliLiter = Value("ml")
+    val Item = Value("item")
+    val Cup = Value("cup")
+    val TableSpoon = Value("tbs")
+    val TeaSpoon = Value("ts")
+  }
 
-  case object Gram extends IngredientUnit
+  import IngredientUnit._
 
-  case object MilliLiter extends IngredientUnit
-
-  case object Item extends IngredientUnit
-
-  case object Cup extends IngredientUnit
-
-  case object TableSpoon extends IngredientUnit
-
-  case object TeaSpoon extends IngredientUnit
-
-  case class Amount(quantity: Double, unit: IngredientUnit) {
-
-    def multiply(n: Int): Amount = {
+  case class Ingredient(
+   name: String,
+   quantity: Double,
+   unit: IngredientUnit,
+   state: Option[String]
+  ) {
+    def multiply(n: Int): Ingredient = {
       val newQuantity: Double = n * quantity
       if (unit == TeaSpoon && newQuantity % 3 == 0)
-        Amount(newQuantity / 3, TableSpoon)
+        copy(quantity = newQuantity / 3, unit = TableSpoon)
       else copy(quantity = newQuantity)
     }
   }
 
-  case class Ingredient(
-   name: String,
-   amount: Amount,
-   state: Option[String]
-  ) {
-    def multiply(n: Int): Ingredient = {
-      copy(amount = amount multiply n)
-    }
-  }
-
-  implicit def IngredientCodecJson =
-    casecodec3(Ingredient.apply, Ingredient.unapply)("name", "quantity", "unit")
+  implicit def IngredientDecodeJson: DecodeJson[Ingredient] =
+    DecodeJson(
+      c =>
+        for {
+          n <- (c -- "name").as[String]
+          q <- (c -- "quantity").as[Double]
+          u <- (c -- "unit").as[String]
+          s <- (c -- "state").as[Option[String]]
+        } yield Ingredient(n, q, IngredientUnit.withName(u), s)
+    )
 
   case class Recipe(
    name: String,
@@ -60,6 +60,16 @@ trait RecipeModule {
     }
   }
 
-  implicit def RecipeCodecJson =
-    casecodec6(Recipe.apply, Recipe.unapply)("name", "ingredients", "time", "portions", "url", "description")
+  implicit def RecipeDecodeJson: DecodeJson[Recipe] =
+    DecodeJson(
+      c =>
+        for {
+          n <- (c -- "name").as[String]
+          i <- (c -- "ingredients").as[List[Ingredient]]
+          t <- (c -- "time").as[Int]
+          p <- (c -- "portions").as[Int]
+          u <- (c -- "url").as[String]
+          d <- (c -- "description").as[String]
+        } yield Recipe(n, i, new Period(0, t, 0, 0), p, u, d)
+    )
 }
