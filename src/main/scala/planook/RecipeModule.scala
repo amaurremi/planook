@@ -26,6 +26,7 @@ trait RecipeModule {
     val Slice = Value("slice")
     val Handful = Value("handful")
     val Bunch = Value("bunch")
+    val Leaf = Value("leaf")
 
     def isMass(unit: IngredientUnit): Boolean =
       Seq(Gram, Pound, Ounce) contains unit
