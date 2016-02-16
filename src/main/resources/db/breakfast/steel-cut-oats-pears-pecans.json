@@ -1,0 +1,60 @@
+{
+  "recipe-name": "Steel-Cut Oats with Honeyed Pears and Glazed Pecans",
+  "other-ingredients": [
+    "half-and-half",
+    "cream",
+    "or milk"
+  ],
+  "url": "http://blog.williams-sonoma.com/steel-cut-oats-with-honeyed-pears-and-glazed-pecans/",
+  "portions": 4,
+  "description": "In a heavy-bottomed saucepan over high heat, combine the water and salt and bring to a boil. Stir in the oats and return to a boil, then reduce the heat to medium-low. Simmer, uncovered, stirring often to avoid scorching, until the oats are done to your preferred texture, 25 to 35 minutes.\nIn a fry pan over medium heat, melt the 1 tsp. butter. Add the pecans and sprinkle with the sugar. Cook, stirring constantly, until the sugar melts and the pecans are toasted and glazed, about 1 minute. Transfer to a chopping board. Let the pecans cool slightly, then coarsely chop. Set aside. Rinse out the fry pan.\nJust before the oatmeal is done, in the same fry pan over medium heat, melt the 1 Tbs. butter. Add the pears and cook, stirring occasionally, until they have given off some juices and are heated through, about 3 minutes. Add the honey and cinnamon and stir just until the honey melts.\nDivide the oatmeal among 4 bowls. Top with equal amounts of the pears and their juices along with the pecans. Drizzle each serving with some half-and-half and serve hot.\nVariation: Substitute Golden Delicious apples for the pears. To spice things up,  add a sprinkling of minced crystallized ginger to the topping.",
+  "time": 40,
+  "in": [
+    {
+      "n": "water",
+      "q": 4,
+      "u": "cup"
+    },
+    {
+      "n": "fine sea salt",
+      "q": 0.25,
+      "u": "ts"
+    },
+    {
+      "n": "steel-cut oats",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "butter",
+      "q": 4,
+      "u": "ts"
+    },
+    {
+      "n": "pecans",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "sugar",
+      "q": 2,
+      "u": "ts"
+    },
+    {
+      "n": "pears",
+      "q": 2,
+      "u": "item",
+      "s": "ripe, juicy; Comice or Anjou, peeled, cored, cut into chunks"
+    },
+    {
+      "n": "honey",
+      "q": 3,
+      "u": "tbs"
+    },
+    {
+      "n": "ground cinnamon",
+      "q": 0.25,
+      "u": "ts"
+    }
+  ]
+}

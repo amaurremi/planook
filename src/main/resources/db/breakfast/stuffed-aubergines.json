@@ -1,0 +1,60 @@
+{
+  "recipe-name": "Stuffed Aubergines",
+  "url": "http://whatshouldieatforbreakfasttoday.com/post/12785894316/stuffed-aubergines",
+  "portions": 2,
+  "description": "Heat the oven to 220ºC. Cut the aubergines in half lengthways and scoop out the aubergine flesh, so that you have 4 shells. Brush these with a little of the oil, season and place in a baking dish. Cover with foil and bake for 20 mins.\nYou will need the flesh so chop it and put on side. Meanwhile heat the oil on a frying pan, tip in the onion and cook until soft. Add the aubergine flesh and cook through. Add the garlic and tomatoes and cook for 3 mins more. In the end stir in olives, basil, mozzarella and seasoning.\nWhen the aubergine shells are ready, remove from the oven and reduce heat to 200ºC. Fill the shelves with prepared mix, sprinkle with breadcrumbs and pour over with a bit of oil. \nBake for 15-20 mins, until the cheese is gooey and the breadcrumbs are golden.",
+  "time": 40,
+  "in": [
+    {
+      "n": "aubergines",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "onion",
+      "q": 1,
+      "u": "item",
+      "s": "chopped"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 4,
+      "u": "item",
+      "s": "chopped"
+    },
+    {
+      "n": "cherry tomatoes",
+      "q": 12,
+      "u": "item",
+      "s": "cut in halves"
+    },
+    {
+      "n": "green olives pitted",
+      "q": 50,
+      "u": "g",
+      "s": "chopped"
+    },
+    {
+      "n": "fresh basil",
+      "q": 1,
+      "u": "handful",
+      "s": "chopped"
+    },
+    {
+      "n": "ball of mozzarella",
+      "q": 125,
+      "u": "g",
+      "s": "cut"
+    },
+    {
+      "n": "breadcrumbs",
+      "q": 1,
+      "u": "handful"
+    }
+  ]
+}

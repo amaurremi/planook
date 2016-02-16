@@ -15,7 +15,7 @@ object Data {
     "baby spinach", "brussels sprouts", "green cabbage", "savoy cabbage", "chard", "cilantro", "chili",
     "chili pepper", "dill", "fennel", "garlic", "ginger", "granny smith apple", "garlic clove", "grapefruit",
     "mint", "oregano", "rosemary", "thyme", "sage", "tarragon", "chives", "green kale", "leek", "lemon grass",
-    "lemongrass", "lime", "micro green",
+    "lemongrass", "lime", "micro green", "shiitake", "cherry", "paprika", "red paprika", "green paprika",
     "cremini mushroom", "shiitake mushroom", "portobello mushroom", "okra", "sweet onion", "blood orange",
     "parsley", "flat leaf parsley", "italian parsley", "curly parsley", "asian pear", "anjou pear", "green pepper",
     "red pepper", "jalapeno", "jalapeno pepper", "orange pepper", "poblano pepper", "russet potato",
