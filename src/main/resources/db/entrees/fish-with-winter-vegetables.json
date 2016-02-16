@@ -1,0 +1,42 @@
+{
+  "recipe-name": "Fish with winter vegetables",
+  "other-ingredients": "",
+  "url": "https://www.freeletics.com/en/nutrition/guides/burn_fat/recipes/fish_with_kale_get_lean",
+  "portions": 1,
+  "description": "",
+  "time": 35,
+  "in": [
+    {
+      "n": "fish fillet",
+      "q": 200,
+      "u": "g",
+      "s": "fresh or frozen"
+    },
+    {
+      "n": "carrot",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "kale",
+      "q": 4,
+      "u": "leaf"
+    },
+    {
+      "n": "cottage cheese",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "thyme",
+      "q": 1,
+      "u": "ts",
+      "s": "fresh or dried"
+    },
+    {
+      "n": "rapeseed oil",
+      "q": 2,
+      "u": "ts"
+    }
+  ]
+}
