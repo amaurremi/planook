@@ -1,0 +1,46 @@
+{
+  "recipe-name": "Baked feta with lamb’s lettuce and walnuts",
+  "other-ingredients": "",
+  "url": "https://www.freeletics.com/en/nutrition/guides/burn_fat/recipes/feta_with_lambs_lettuce_get_lean",
+  "portions": 1,
+  "description": "",
+  "time": 25,
+  "in": [
+    {
+      "n": "feta cheese",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "red onion",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "thyme",
+      "q": 1,
+      "u": "ts",
+      "state": "fresh"
+    },
+    {
+      "n": "lamb's lettuce",
+      "q": 3,
+      "u": "handful"
+    },
+    {
+      "n": "pomegranate",
+      "q": 0.5,
+      "u": "items"
+    },
+    {
+      "n": "walnuts",
+      "q": 2,
+      "u": "chopped"
+    },
+    {
+      "n": "walnut oil",
+      "q": 1,
+      "u": "ts"
+    }
+  ]
+}
