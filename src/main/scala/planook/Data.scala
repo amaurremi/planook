@@ -20,7 +20,7 @@ object Data {
     "parsley", "flat leaf parsley", "italian parsley", "curly parsley", "asian pear", "anjou pear", "green pepper",
     "red pepper", "jalapeno", "jalapeno pepper", "orange pepper", "poblano pepper", "russet potato",
     "fingerling potato", "radicchio", "radish", "iceberg", "iceberg lettuce", "iceberg salad", "scallion", "shallot",
-    "zucchini", "grape tomato", "watercress", "yuca"
+    "zucchini", "grape tomato", "watercress", "yuca", "red bell pepper"
   )
 
   lazy val produceWithPlural: Set[String] =
