@@ -30,7 +30,7 @@ trait RecipeModule {
    state: Option[String]
   ) {
     def multiply(n: Int): Ingredient = {
-      val newQuantity: Double = n * quantity
+      val newQuantity = n * quantity
       if (unit == TeaSpoon && newQuantity % 3 == 0)
         copy(quantity = newQuantity / 3, unit = TableSpoon)
       else copy(quantity = newQuantity)
@@ -46,10 +46,10 @@ trait RecipeModule {
     DecodeJson(
       c =>
         for {
-          n <- (c --\ "n").as[String] // name
-          q <- (c --\ "q").as[Double] // quantity
-          u <- (c --\ "u").as[String] // unit
-          s <- (c --\ "s").as[Option[String]]
+          n <- (c --\ "n").as[String]         // name
+          q <- (c --\ "q").as[Double]         // quantity
+          u <- (c --\ "u").as[String]         // unit
+          s <- (c --\ "s").as[Option[String]] // state
         } yield Ingredient(n, q, IngredientUnit.withName(u), s)
     )
 
@@ -71,7 +71,8 @@ trait RecipeModule {
     }
 
     override def toString = {
-      val formatter = new PeriodFormatterBuilder().appendHours().appendSuffix(" h ").appendMinutes().appendSuffix(" min").toFormatter
+      val formatter = new PeriodFormatterBuilder()
+        .appendHours().appendSuffix(" h ").appendMinutes().appendSuffix(" min").toFormatter
       s"""
           |$name
           |
