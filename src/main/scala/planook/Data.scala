@@ -1,12 +1,14 @@
 package planook
 
+import scala.collection.breakOut
+
 object Data {
 
   val PRODUCE = Set(
     "apple", "pear", "peach", "nectarine", "strawberry", "grape", "celery", "spinach", "basil",
-    "tomato", "bell pepper", "cucumber", "cherry tomato", "blueberry", "pepper", "snap peas", "potato",
+    "tomato", "bell pepper", "cucumber", "cherry tomato", "blueberry", "pepper", "snap pea", "potato",
     "raspberry", "lettuce", "kale", "plum", "squash", "winter squash", "tangerine", "lemon", "orange",
-    "mandarine", "clementine", "carrot", "broccoli", "sugar peas", "green onion", "banana", "watermelon",
+    "mandarine", "clementine", "carrot", "broccoli", "sugar pea", "green onion", "banana", "watermelon",
     "honey melon", "mushroom", "sweet potato", "cauliflower", "cantaloupe", "grapefruit", "eggplant",
     "aubergine", "kiwi", "papaya", "mango", "onion", "asparagus", "red onion", "cabbage", "red cabbage",
     "pineapple", "sweet corn", "avocado", "arugula", "beet", "blackberry", "baby bok choy", "bok choy",
@@ -21,10 +23,18 @@ object Data {
     "zucchini", "grape tomato", "watercress", "yuca"
   )
 
-  def produceWithPlugal =
-    PRODUCE ++
-      (PRODUCE map { _ + "s" }) ++
-      (PRODUCE map { _ + "es" }) ++
-      (PRODUCE map { _.replaceAll("y$", "ies") }) ++
-      (PRODUCE filter { p => !(p startsWith "fresh") })
+  lazy val produceWithPlural: Set[String] =
+    (PRODUCE flatMap {
+      p =>
+        val  lastIndex = p.length - 1
+        val (prefix, last) = (p substring (0, lastIndex), p substring lastIndex)
+        val plural = last match {
+          case "o" => prefix + "oes"
+          case "y" if !(p matches ".*[aeiou]y$") => prefix + "ies"
+          case "s" => p
+          case _ if (p endsWith "ch") || (p endsWith "sh")  => p + "es"
+          case _   => p + "s"
+         }
+        Seq(p, plural)
+    })(breakOut)
 }

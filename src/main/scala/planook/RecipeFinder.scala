@@ -57,10 +57,11 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
   }
 
   private[this] def isProduce(str: String): Boolean =
-    Data.produceWithPlugal contains normalize(str)
+    Data.produceWithPlural contains normalize(str)
 
-  def normalize(str: String): String = // todo better
-    str.trim.toLowerCase.replaceAll("-/", " ")
+  def normalize(str: String): String = {
+    str.trim.toLowerCase.replaceAll("[-/]", " ") replaceFirst("^fresh ", "")
+  }
 
   /**
     * Chooses `n` different random recipes from a data base
