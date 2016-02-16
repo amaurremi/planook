@@ -16,6 +16,7 @@ trait RecipeModule {
     val Gram = Value("g")
     val Pound = Value("lb")
     val MilliLiter = Value("ml")
+    val Pint = Value("pint")
     val Ounce = Value("oz")
     val Item = Value("item")
     val Cup = Value("cup")
@@ -28,7 +29,7 @@ trait RecipeModule {
       Seq(Gram, Pound, Ounce) contains unit
 
     def isVolume(unit: IngredientUnit): Boolean =
-      Seq(MilliLiter, Cup, TableSpoon, TeaSpoon, Can) contains unit
+      Seq(MilliLiter, Cup, TableSpoon, TeaSpoon, Can, Pint) contains unit
 
     def unifyUnits(amount1: Amount, amount2: Amount): (IngredientUnit, Double, Double) = {
       val (u1, q1) = amount1
@@ -60,6 +61,7 @@ trait RecipeModule {
         case TableSpoon => 15
         case TeaSpoon   => 5
         case Can        => 400
+        case Pint       => 473
       }
       mult * quantity
     }
