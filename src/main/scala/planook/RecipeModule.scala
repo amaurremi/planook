@@ -3,6 +3,7 @@ package planook
 import argonaut.Argonaut._
 import argonaut.DecodeJson
 import org.joda.time.Period
+import org.joda.time.format.PeriodFormatterBuilder
 
 trait RecipeModule {
 
@@ -29,6 +30,11 @@ trait RecipeModule {
       if (unit == TeaSpoon && newQuantity % 3 == 0)
         copy(quantity = newQuantity / 3, unit = TableSpoon)
       else copy(quantity = newQuantity)
+    }
+
+    override def toString = {
+      val unitStr = if (unit == Item) "" else unit.toString + " "
+      s"$quantity $unitStr$name" + (if (state.isDefined) s", ${state.get}" else "")
     }
   }
 
@@ -57,8 +63,26 @@ trait RecipeModule {
       val newIngredients = ingredients map {
         _ multiply (n / portions)
       }
-      copy(ingredients = newIngredients)
+      copy(ingredients = newIngredients, portions = n)
     }
+
+    override def toString = {
+      val formatter = new PeriodFormatterBuilder().appendHours().appendSuffix(" hours").appendMinutes().appendSuffix(" minutes").toFormatter
+      s"""
+          |$name
+          |
+          |Ingredients:
+          |${ingredients mkString "\n"}
+          |${otherIngredients mkString "\n"}
+          |
+          |Cooking time: ${formatter print cookingTime}
+          |Portions: $portions
+          |URL: $url
+          |
+          |Instructions:
+          |$description
+          |""".stripMargin
+      }
   }
 
   implicit def RecipeDecodeJson: DecodeJson[Recipe] =
