@@ -31,12 +31,13 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
     val ingredients = recipes flatMap { _.ingredients }
     val map = ingredients.foldLeft(Map.empty[String, Amount]) {
       case (oldMap, ingr) =>
-        oldMap get ingr.name match {
+        val name = ingr.name
+        oldMap get name match {
           case Some(a@(unit, quantity)) =>
             val (newUnit, quantity1, quantity2) = unifyUnits(a, (ingr.unit, ingr.quantity))
-            oldMap + (ingr.name -> (newUnit, quantity1 + quantity2))
+            oldMap + (normalize(name) -> (newUnit, quantity1 + quantity2))
           case None                   =>
-            oldMap + (ingr.name -> (ingr.unit, ingr.quantity))
+            oldMap + (normalize(name) -> (ingr.unit, ingr.quantity))
         }
     }
     map map {
@@ -44,6 +45,9 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
         Ingredient(name, quantity, unit, None)
     }
   }
+
+  def normalize(str: String): String = // todo better
+    str.trim.toLowerCase.replaceAll("-/", " ")
 
   /**
     * Chooses `n` different random recipes from a data base
