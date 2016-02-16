@@ -1,0 +1,46 @@
+{
+  "recipe-name": "Eggplant & Mozzarella Melt",
+  "other-ingredients": [
+    "olive oil",
+    "salt",
+    "ground pepper"
+  ],
+  "url": "http://www.marthastewart.com/340875/eggplant-and-mozzarella-melt?czone=food/lunch-recipes/sandwich-recipes",
+  "portions": 4,
+  "description": "Preheat oven to 475 degrees. In a shallow bowl, lightly beat eggs with 1 teaspoon salt and 1/4 teaspoon pepper. Spread breadcrumbs in a pie plate or shallow bowl. \n Oil a rimmed baking sheet. Dip eggplant rounds in egg, then dredge in breadcrumbs, turning to coat completely; transfer to prepared baking sheet. Bake (without turning) until golden and tender, 15 to 20 minutes. \n Meanwhile, split bread lengthwise, and place cut side up on another baking sheet; press gently in centers to create a well. Layer both halves with tomato sauce, eggplant, and cheese. Bake until cheese is browned in spots, 6 to 8 minutes.",
+  "time": 50,
+  "in": [
+    {
+      "n": "eggs",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "dried breadcrumbs",
+      "q": 0.75,
+      "u": "cup"
+    },
+    {
+      "n": "eggplant",
+      "q": 1,
+      "u": "lb",
+      "s": "sliced into 1/2-inch-thick rounds"
+    },
+    {
+      "n": "soft Italian bread",
+      "q": 8,
+      "u": "oz"
+    },
+    {
+      "n": "tomato sauce",
+      "q": 2,
+      "u": "cup"
+    },
+    {
+      "n": "part-skim mozzarella",
+      "q": 8,
+      "u": "oz",
+      "s": "thinly sliced"
+    }
+  ]
+}
