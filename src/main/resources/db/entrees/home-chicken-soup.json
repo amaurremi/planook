@@ -1,0 +1,33 @@
+{
+  "recipe-name": "Home Recipe Chicken Soup",
+  "other-ingredients": [
+    "salt",
+    "pepper"
+  ],
+  "url": "\"\"",
+  "portions": 4,
+  "description": "\"\"",
+  "time": 60,
+  "in": [
+    {
+      "n": "bone-in chicken thighs",
+      "q": 8,
+      "u": "item"
+    },
+    {
+      "n": "onion",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "angel-hair pasta",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "dill",
+      "q": 1,
+      "u": "handful"
+    }
+  ]
+}
