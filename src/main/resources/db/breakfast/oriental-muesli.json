@@ -1,0 +1,48 @@
+{
+  "recipe-name": "Oriental muesli",
+  "other-ingredients": "",
+  "url": "https://www.freeletics.com/en/nutrition/guides/burn_fat/recipes/oriental_muesli_low_carb",
+  "time": 5,
+  "in": [
+    {
+      "n": "oatmeal",
+      "q": 50,
+      "u": "g"
+    },
+    {
+      "n": "orange",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "dried figs",
+      "q": 3,
+      "u": "item"
+    },
+    {
+      "n": "walnuts",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "pistachios",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "greek yogurt",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "milk",
+      "q": 150,
+      "u": "ml"
+    },
+    {
+      "n": "cinnamon",
+      "q": 0.5,
+      "u": "ts"
+    }
+  ]
+}
