@@ -67,7 +67,7 @@ trait RecipeModule {
     }
 
     override def toString = {
-      val formatter = new PeriodFormatterBuilder().appendHours().appendSuffix(" hours").appendMinutes().appendSuffix(" minutes").toFormatter
+      val formatter = new PeriodFormatterBuilder().appendHours().appendSuffix(" h ").appendMinutes().appendSuffix(" min").toFormatter
       s"""
           |$name
           |
@@ -75,7 +75,7 @@ trait RecipeModule {
           |${ingredients mkString "\n"}
           |${otherIngredients mkString "\n"}
           |
-          |Cooking time: ${formatter print cookingTime}
+          |Cooking time: ${formatter print cookingTime.normalizedStandard}
           |Portions: $portions
           |URL: $url
           |
