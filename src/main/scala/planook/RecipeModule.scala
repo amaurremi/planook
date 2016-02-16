@@ -1,5 +1,7 @@
 package planook
 
+import java.text.DecimalFormat
+
 import argonaut.Argonaut._
 import argonaut.DecodeJson
 import org.joda.time.Period
@@ -9,6 +11,8 @@ trait RecipeModule {
 
   object IngredientUnit extends Enumeration {
     type IngredientUnit = Value
+    type Amount = (IngredientUnit, Double)
+
     val Gram = Value("g")
     val Pound = Value("lb")
     val MilliLiter = Value("ml")
@@ -19,6 +23,46 @@ trait RecipeModule {
     val TeaSpoon = Value("ts")
     val Can = Value("can")
     val Slice = Value("slice")
+
+    def isMass(unit: IngredientUnit): Boolean =
+      Seq(Gram, Pound, Ounce) contains unit
+
+    def isVolume(unit: IngredientUnit): Boolean =
+      Seq(MilliLiter, Cup, TableSpoon, TeaSpoon, Can) contains unit
+
+    def unifyUnits(amount1: Amount, amount2: Amount): (IngredientUnit, Double, Double) = {
+      val (u1, q1) = amount1
+      val (u2, q2) = amount2
+      if (u1 == u2)
+        (u1, q1, q2)
+      else if (isMass(u1) && isMass(u2))
+        (Gram, toGrams(u1, q1), toGrams(u2, q2))
+      else if (isVolume(u1) && isVolume(u2))
+        (MilliLiter, toMl(u1, q1), toMl(u2, q2))
+      else throw new UnsupportedOperationException(s"can't unify $u1 and $u2")
+    }
+
+    def toGrams(unit: IngredientUnit, quantity: Double): Double = {
+      assert(isMass(unit), s"can't convert $unit to grams")
+      val mult = unit match {
+        case Gram => 1
+        case Pound => 454
+        case Ounce => 28
+      }
+      mult * quantity
+    }
+
+    def toMl(unit: IngredientUnit, quantity: Double): Double = {
+      assert(isVolume(unit), s"can't convert $unit to ml")
+      val mult = unit match {
+        case MilliLiter => 1
+        case Cup        => 237
+        case TableSpoon => 15
+        case TeaSpoon   => 5
+        case Can        => 400
+      }
+      mult * quantity
+    }
   }
 
   import IngredientUnit._
@@ -38,7 +82,8 @@ trait RecipeModule {
 
     override def toString = {
       val unitStr = if (unit == Item) "" else unit.toString + " "
-      s"$quantity $unitStr$name" + (if (state.isDefined) s", ${state.get}" else "")
+      val quantityStr = new DecimalFormat("#.#") format quantity
+      s"$quantityStr $unitStr$name" + (if (state.isDefined) s", ${state.get}" else "")
     }
   }
 

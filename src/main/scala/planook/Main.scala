@@ -6,9 +6,12 @@ import scopt.{OptionParser, Read}
 object Main {
 
   def main(args: Array[String]) = {
+    import RecipeFinder._
     parser.parse(args, CmdOptions()) foreach { options =>
-      val recipeSeqs = options.requests flatMap RecipeFinder.findRecipes
-      println(recipeSeqs)
+      val recipes = options.requests flatMap findRecipes
+      println(recipes)
+      println("\nShopping List:")
+      println(shoppingList(recipes) mkString "\n")
     }
   }
 
