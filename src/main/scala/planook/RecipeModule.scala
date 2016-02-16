@@ -1,7 +1,7 @@
 package planook
 
 import argonaut.Argonaut._
-import argonaut.DecodeJson
+import argonaut.{DecodeJson, EncodeJson}
 import org.joda.time.Period
 
 trait RecipeModule {
@@ -36,12 +36,16 @@ trait RecipeModule {
     DecodeJson(
       c =>
         for {
-          n <- (c -- "name").as[String]
-          q <- (c -- "quantity").as[Double]
-          u <- (c -- "unit").as[String]
-          s <- (c -- "state").as[Option[String]]
+          n <- (c --\ "name").as[String]
+          q <- (c --\ "quantity").as[Double]
+          u <- (c --\ "unit").as[String]
+          s <- (c --\ "state").as[Option[String]]
         } yield Ingredient(n, q, IngredientUnit.withName(u), s)
     )
+
+  implicit def RecipeEncodejson: EncodeJson[Recipe] =
+    EncodeJson((r: Recipe) =>
+      ("recipe-name" := r.name) ->: ("portions" := r.portions) ->: ("ingredients" := List.empty[String]) ->: jEmptyObject)
 
   case class Recipe(
    name: String,
@@ -64,12 +68,12 @@ trait RecipeModule {
     DecodeJson(
       c =>
         for {
-          n <- (c -- "recipe-name").as[String]
-          i <- (c -- "ingredients").as[List[Ingredient]]
-          t <- (c -- "time").as[Int]
-          p <- (c -- "portions").as[Int]
-          u <- (c -- "url").as[String]
-          d <- (c -- "description").as[String]
+          n <- (c --\ "recipe-name").as[String]
+          i <- (c --\ "ingredients").as[List[Ingredient]]
+          t <- (c --\ "time").as[Int]
+          p <- (c --\ "portions").as[Int]
+          u <- (c --\ "url").as[String]
+          d <- (c --\ "description").as[String]
         } yield Recipe(n, i, new Period(0, t, 0, 0), p, u, d)
     )
 }

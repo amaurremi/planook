@@ -8,8 +8,8 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
 
   // tip: create recipe json files here: http://www.objgen.com/json
   // every recipe is stored in a "normalized" format, for one portion
-  val breakfasts: Seq[Recipe] = parseJsonFiles("breakfast")
-  val entrees: Seq[Recipe] = parseJsonFiles("entree")
+  lazy val breakfasts: Seq[Recipe] = parseJsonFiles("breakfast")
+  lazy val entrees: Seq[Recipe] = parseJsonFiles("entree")
 
   def findRecipes(mealRequest: MealRequest): Seq[Recipe] = {
     import mealRequest._
@@ -23,7 +23,7 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
     * Chooses `n` different random recipes from a data base
     */
   private[this] def randomRecipes(n: Int, db: Seq[Recipe]): Seq[Recipe] =
-    (scala.util.Random.shuffle(1 to db.length) take n map {
+    (scala.util.Random.shuffle(db.indices.toList) take n map {
       db(_)
     })(breakOut)
 }
