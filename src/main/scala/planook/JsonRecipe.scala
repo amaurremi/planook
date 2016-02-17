@@ -20,6 +20,8 @@ trait JsonRecipe extends RecipeModule {
     val string = new String(Files.readAllBytes(path))
     val decoded: \/[\/[String, (String, CursorHistory)], Recipe] = Parse.decode[Recipe](string)
     if (decoded.isRight) decoded.toOption.get
-    else throw new UnsupportedOperationException("invalid recipe file: " + decoded.toEither.left.toString)
+    else throw new UnsupportedOperationException(
+      s"""invalid recipe file ${path.getFileName}
+         |error message: ${decoded.toEither.left.toString}""".stripMargin)
   }
 }

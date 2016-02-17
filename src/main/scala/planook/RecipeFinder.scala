@@ -10,7 +10,7 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
   // tip: create recipe json files here: http://www.objgen.com/json
   lazy val breakfasts: Seq[Recipe] = parseJsonFiles("breakfast")
   lazy val weekendBreakfasts: Seq[Recipe] = parseJsonFiles("weekend-breakfast")
-  lazy val entrees: Seq[Recipe] = parseJsonFiles("entrees")
+  lazy val entrees: Seq[Recipe] = parseJsonFiles("entrees") ++ parseJsonFiles("sandwiches")
 
   def findRecipes(mealRequest: MealRequest): Seq[Recipe] = {
     import Meal._
