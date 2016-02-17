@@ -1,0 +1,52 @@
+{
+  "recipe-name": "Creamy Avocado Pasta",
+  "other-ingredients": [
+    "balsamic salad dressing (optional)",
+    "salt",
+    "pepper"
+  ],
+  "url": "http://lecremedelacrumb.com/2014/06/avocado-pasta.html",
+  "portions": 4,
+  "description": "In a food processor or blender combine mashed avocado, lemon juice, olive oil, parsley, and salt and pepper and pulse until smooth. Taste and add salt and pepper if desired.\\nAdd cooked pasta to a large bowl. Toss with avocado sauce until coated well. Add cheese and stir to combine.\\nServe pasta at room temp or cold. Add tomatoes, fresh herbs, and additional cheese if desired. Drizzle with balsamic salad dressing immediately before eating.",
+  "time": 25,
+  "in": [
+    {
+      "n": "bow-tie pasta",
+      "q": 8,
+      "u": "oz",
+      "s": "cooked al dente, drained"
+    },
+    {
+      "n": "parmesan",
+      "q": 0.25,
+      "u": "cup",
+      "s": "shredded"
+    },
+    {
+      "n": "avocado",
+      "q": 1,
+      "u": "item",
+      "s": "roughly mashed with a fork"
+    },
+    {
+      "n": "lemon juice",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "olive oil",
+      "q": 3,
+      "u": "tbs"
+    },
+    {
+      "n": "fresh parsley or other herbs",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "tomato",
+      "q": 2,
+      "u": "item"
+    }
+  ]
+}
