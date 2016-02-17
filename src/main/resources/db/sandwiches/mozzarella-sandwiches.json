@@ -1,0 +1,97 @@
+{
+  "recipe-name": "Grilled Mozzarella Sandwiches",
+  "url": "http://www.marthastewart.com/315376/grilled-mozzarella-sandwiches?czone=c&center=997029&gallery=996723&slide=315376",
+  "portions": 4,
+  "description": "Place the mozzarella on 4 slices of the bread. Cover with the remaining slices to form sandwiches. Trim the crusts off to make perfect 4-inch squares.\\nIn a wide shallow bowl, whisk the eggs. Add the cream, thyme leaves, salt, and nutmeg. Whisk until well blended. \\nIn a 10 to 12-inch nonstick saute pan, heat 2 tablespoons of olive oil over medium-high heat until smoking. Add 1 tablespoon of the butter and cook until the sizzling subsides. Dip 2 of the sandwiches into the egg mixture, turning to coat, place in the pan, and cook until golden brown on the first side, about 2 minutes. Flip over and brown on the other side. Transfer the sandwiches to individual plates and repeat the process with the remaining 2 tablespoons olive oil, 1 tablespoon butter, and 2 sandwiches. Cut in half, and serve immediately.",
+  "time": 25,
+  "in": [
+    {
+      "n": "fresh mozzarella",
+      "q": 1,
+      "u": "lb",
+      "s": "cut into 4 equal pieces about 3-inches by 4-inches"
+    },
+    {
+      "n": "bread, firm white",
+      "q": 8,
+      "u": "slices",
+      "s": "1/2-inch thick slices"
+    },
+    {
+      "n": "eggs",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "heavy cream",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "fresh thyme",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "salt",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "nutmeg",
+      "q": 1,
+      "u": "item",
+      "s": "grated"
+    },
+    {
+      "n": "olive oil",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "butter",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    }
+  ]
+}
