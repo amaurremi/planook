@@ -1,0 +1,51 @@
+{
+  "recipe-name": "Grilled Caprese Sandwich",
+  "other-ingredients": [
+    "salt",
+    "pepper"
+  ],
+  "url": "http://peegaw.tumblr.com/post/2712611955/making-grilled-caprese-sandwich",
+  "portions": 0,
+  "description": "2",
+  "time": 20,
+  "in": [
+    {
+      "n": "bread",
+      "q": 4,
+      "u": "slice"
+    },
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 1,
+      "u": "ts",
+      "s": "minced"
+    },
+    {
+      "n": "tomatoes",
+      "q": 3,
+      "u": "item",
+      "s": "sliced"
+    },
+    {
+      "n": "mozzarella",
+      "q": 1,
+      "u": "cup",
+      "s": "sliced thinly"
+    },
+    {
+      "n": "basil",
+      "q": 1,
+      "u": "bunch"
+    },
+    {
+      "n": "balsamic vinegar",
+      "q": 2,
+      "u": "tbs"
+    }
+  ]
+}

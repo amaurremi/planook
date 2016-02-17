@@ -1,0 +1,99 @@
+{
+  "recipe-name": "Spinach and Artichoke Grilled Cheese Sandwich",
+  "other-ingredients": [
+    "olive oil"
+  ],
+  "url": "http://joythebaker.com/2013/04/spinach-and-artichoke-grilled-cheese-sandwich/",
+  "portions": 2,
+  "description": "",
+  "time": 25,
+  "in": [
+    {
+      "n": "garlic cloves",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "baby spinach",
+      "q": 3,
+      "u": "cup"
+    },
+    {
+      "n": "bread",
+      "q": 4,
+      "u": "slice"
+    },
+    {
+      "n": "cream cheese",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "jack cheese",
+      "q": 0.5,
+      "u": "cup",
+      "s": "grated or crumbled"
+    },
+    {
+      "n": "parmesan",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "canned artichoke heartes",
+      "q": 0.5,
+      "u": "cup",
+      "s": "coarsely chopped, drained"
+    },
+    {
+      "n": "sour cream",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "sriracha",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "butter",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "recipe-name": "Spaghetti with Tomatoes and Herbed Ricotta",
+  "other-ingredients": [
+    "salt",
+    "pepper"
+  ],
+  "url": "http://blog.williams-sonoma.com/spaghetti-with-tomatoes-herbed-ricotta/",
+  "portions": 4,
+  "description": "",
+  "time": 25,
+  "in": [
+    {
+      "n": "olive oil",
+      "q": 0.3,
+      "u": "cup"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 6,
+      "u": "item",
+      "s": "lightly crushed"
+    },
+    {
+      "n": "cherry tomatoes",
+      "q": 2.5,
+      "u": "lb"
+    },
+    {
+      "n": "ricotta",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "fresh basil",
+      "q": 3,
+      "u": "tbs"
+    },
+    {
+      "n": "flat-fleaf parsley",
+      "q": 1,
+      "u": "tbs",
+      "s": "chopped"
+    },
+    {
+      "n": "spaghetti",
+      "q": 1,
+      "u": "lb"
+    }
+  ]
+}
