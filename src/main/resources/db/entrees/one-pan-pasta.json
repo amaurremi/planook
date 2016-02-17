@@ -1,0 +1,57 @@
+{
+  "recipe-name": "One Pan Pasta",
+  "other-ingredients": [
+    "parmesan",
+    "salt",
+    "pepper"
+  ],
+  "url": "http://www.marthastewart.com/978784/one-pan-pasta",
+  "portions": 4,
+  "description": "",
+  "time": 20,
+  "in": [
+    {
+      "n": "linguine",
+      "q": 12,
+      "u": "oz"
+    },
+    {
+      "n": "cherry tomatoes",
+      "q": 120,
+      "u": "g",
+      "s": "halved or quartered if large"
+    },
+    {
+      "n": "onion",
+      "q": 1,
+      "u": "item",
+      "s": "thinly sliced"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 4,
+      "u": "item",
+      "s": "thinly sliced"
+    },
+    {
+      "n": "red-pepper flakes",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "basil",
+      "q": 2,
+      "u": "bunch"
+    },
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "water",
+      "q": 4.5,
+      "u": "cup"
+    }
+  ]
+}
