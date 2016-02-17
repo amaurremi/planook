@@ -3,7 +3,6 @@ package planook
 import planook.RequestModule.{Meal, MealRequest}
 
 import scala.collection.breakOut
-import scala.collection.immutable.Iterable
 
 object RecipeFinder extends RecipeModule with JsonRecipe {
 

@@ -22,7 +22,7 @@
     {
       "n": "garlic cloves",
       "q": 1,
-      "u": "ts",
+      "u": "item",
       "s": "minced"
     },
     {
@@ -39,8 +39,8 @@
     },
     {
       "n": "basil",
-      "q": 1,
-      "u": "bunch"
+      "q": 3,
+      "u": "tbs"
     },
     {
       "n": "balsamic vinegar",
