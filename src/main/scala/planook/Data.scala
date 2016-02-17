@@ -23,6 +23,11 @@ object Data {
     "zucchini", "grape tomato", "watercress", "yuca", "red bell pepper", "sprout", "curly kale", "green bean"
   )
 
+  val OBVIOUS = Set(
+    "water", "salt", "pepper", "ground pepper", "sea salt", "coarse sea salt", "freshly ground pepper", "olive oil",
+    "oil", "sugar"
+  )
+
   lazy val produceWithPlural: Set[String] =
     (PRODUCE flatMap {
       p =>

@@ -27,7 +27,7 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
 
   import IngredientUnit._
 
-  def shoppingList(recipes: Seq[Recipe]): Iterable[Ingredient] = {
+  def shoppingList(recipes: Seq[Recipe], printObvious: Boolean = false): Iterable[Ingredient] = {
     val ingredients = recipes flatMap { _.ingredients }
     val map = ingredients.foldLeft(Map.empty[String, Amount]) {
       case (oldMap, ingr) =>
@@ -44,8 +44,8 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
             oldMap + (normalize(name) -> (ingr.unit, ingr.quantity))
         }
     }
-    val toBuy = map map {
-      case (name, (unit, quantity)) =>
+    val toBuy = map collect {
+      case (name, (unit, quantity)) if printObvious || !(Data.OBVIOUS contains name) =>
         Ingredient(name, quantity, unit, None)
     }
     toBuy.toList sortWith {
