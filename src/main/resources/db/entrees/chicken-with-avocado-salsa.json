@@ -1,0 +1,45 @@
+{
+  "recipe-name": "Cayenne-Rubbed Chicken with Avocado Salsa",
+  "other-ingredients": [
+    "coarse salt",
+    "ground pepper"
+  ],
+  "url": "http://www.marthastewart.com/338117/cayenne-rubbed-chicken-with-avocado-sals",
+  "portions": 4,
+  "description": "",
+  "time": 30,
+  "in": [
+    {
+      "n": "cayenne pepper",
+      "q": 0.25,
+      "u": "ts"
+    },
+    {
+      "n": "boneless, skinless chicken breast halves",
+      "q": 28,
+      "u": "oz"
+    },
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "red onion",
+      "q": 1,
+      "u": "item",
+      "s": "finely diced"
+    },
+    {
+      "n": "lime juice",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "avocado",
+      "q": 1,
+      "u": "item",
+      "s": "pitted and cut into chunks"
+    }
+  ]
+}
