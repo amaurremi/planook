@@ -1,0 +1,119 @@
+{
+  "recipe-name": "Quinoa Burrito Bowl",
+  "other-ingredients": "",
+  "url": "http://peegaw.tumblr.com/post/85522795372/making-quinoa-burrito-bowl",
+  "portions": 4,
+  "description": "",
+  "time": 90,
+  "in": [
+    {
+      "n": "boneless skinless chicken breast",
+      "q": 1,
+      "u": "lb"
+    },
+    {
+      "n": "lemon",
+      "q": 1,
+      "u": "item",
+      "s": "juiced"
+    },
+    {
+      "n": "red hot chili pepper",
+      "q": 1,
+      "u": "item",
+      "s": "finely chopped"
+    },
+    {
+      "n": "honey",
+      "q": 0.5,
+      "u": "tbs"
+    },
+    {
+      "n": "chipotle sauce",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "olive oil",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "red bell pepper",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "yellow bell pepper",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "tomato",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "lime",
+      "q": 0.5,
+      "u": "item",
+      "s": "juiced"
+    },
+    {
+      "n": "green onion",
+      "q": 2,
+      "u": "item",
+      "s": "chopped"
+    },
+    {
+      "n": "cilantro",
+      "q": 3,
+      "u": "tbs"
+    },
+    {
+      "n": "onion",
+      "q": 0.5,
+      "u": "item",
+      "s": "chopped"
+    },
+    {
+      "n": "quinoa",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "chicken broth, low sodium",
+      "q": 2,
+      "u": "cup"
+    },
+    {
+      "n": "lime",
+      "q": 0.5,
+      "u": "item",
+      "s": "juiced"
+    },
+    {
+      "n": "parsley",
+      "q": 2,
+      "u": "tbs",
+      "s": "chopped"
+    },
+    {
+      "n": "avocado",
+      "q": 1,
+      "u": "item",
+      "s": "chopped"
+    },
+    {
+      "n": "sour cream",
+      "q": 4,
+      "u": "tbs"
+    },
+    {
+      "n": "lime",
+      "q": 1,
+      "u": "item",
+      "state": "wedges"
+    }
+  ]
+}
