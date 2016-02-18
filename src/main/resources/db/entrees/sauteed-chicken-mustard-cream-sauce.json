@@ -1,0 +1,44 @@
+{
+  "recipe-name": "Sauteed Chicken in Mustard-Cream Sauce",
+  "url": "http://www.marthastewart.com/318298/sauteed-chicken-in-mustard-cream-sauce?czone=f&center=276948&gallery=275660&slide=257637",
+  "portions": 4,
+  "description": "",
+  "time": 25,
+  "in": [
+    {
+      "n": "salt",
+      "q": 0.25,
+      "u": "ts"
+    },
+    {
+      "n": "pepper",
+      "q": 0.25,
+      "u": "ts"
+    },
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "dry white wine or chicken broth",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "heavy cream",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "Dijon mustard",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "dried tarragon (or chopped fresh)",
+      "q": 1,
+      "u": "ts"
+    }
+  ]
+}

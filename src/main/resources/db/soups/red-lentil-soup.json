@@ -1,0 +1,104 @@
+{
+  "recipe-name": "Red Lentil Soup",
+  "other-ingredients": [
+    "sea salt"
+  ],
+  "url": "http://www.101cookbooks.com/archives/red-lentil-soup-recipe.html",
+  "portions": 4,
+  "description": "In a big soup pot, over medium heat, combine the olive oil, onion, shallots, and red pepper flakes. Let them brown, and caramelize a bit, stirring occasionally.\\nStir in the broth, bring to a boil, then stir in the lentils and rice. Simmer for about 30 minutes or until the rice is very tender, and not at all toothsome. By this time, the lentils will have collapsed into a thick slop of sorts. If you need to add more water/broth at any point do so a splash at a time, until the soup thins out to the point you prefer.\\nUnless you used a salty broth, you will likely need to salt generously, until the the soup no longer tastes flat. Serve each bowl topped with almonds, olives, feta, and a slight drizzle of olive oil if you like.",
+  "time": 40,
+  "in": [
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "onion",
+      "q": 1,
+      "u": "item",
+      "s": "chopped"
+    },
+    {
+      "n": "shallots",
+      "q": 3,
+      "u": "item",
+      "s": "chopped"
+    },
+    {
+      "n": "red-pepper flakes",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "vegetable stock (or water)",
+      "q": 6,
+      "u": "cup"
+    },
+    {
+      "n": "red lentils",
+      "q": 1.33,
+      "u": "cup",
+      "s": "picked over and rinsed"
+    },
+    {
+      "n": "brown rice",
+      "q": 0.5,
+      "u": "cup",
+      "s": "picked over and rinsed"
+    },
+    {
+      "n": "slivered almonds",
+      "q": 4,
+      "u": "tbs",
+      "s": "toasted"
+    },
+    {
+      "n": "black olives",
+      "q": 4,
+      "u": "tbs",
+      "s": "chopped"
+    },
+    {
+      "n": "feta",
+      "q": 4,
+      "u": "tbs",
+      "s": "crumbled"
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    },
+    {
+      "n": "",
+      "q": 0,
+      "u": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "recipe-name": "Chicken Scaloppine with Arugula, Lemon, and Parmesan",
+  "other-ingredients": [
+    "freshly ground pepper",
+    "olive oil"
+  ],
+  "url": "http://www.marthastewart.com/1050395/chicken-scaloppine-arugula-lemon-and-parmesan",
+  "portions": 4,
+  "description": "",
+  "time": 0,
+  "in": [
+    {
+      "n": "boneless, skinless chicken breast halves",
+      "q": 24,
+      "u": "oz"
+    },
+    {
+      "n": "salt",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "lemon juice",
+      "q": 4,
+      "u": "ts"
+    },
+    {
+      "n": "arugula",
+      "q": 8,
+      "u": "oz"
+    },
+    {
+      "n": "parmesan",
+      "q": 1,
+      "u": "oz"
+    },
+    {
+      "n": "lemon",
+      "q": 4,
+      "u": "slice"
+    }
+  ]
+}

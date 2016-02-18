@@ -1,0 +1,116 @@
+{
+  "recipe-name": "Thai Curry Pomegranate Chicken",
+  "url": "http://www.howsweeteats.com/2013/10/thai-curry-pomegranate-chicken/",
+  "portions": 2,
+  "description": "",
+  "time": 50,
+  "in": [
+    {
+      "n": "boneless, skinless chicken breasts",
+      "q": 2,
+      "u": "item",
+      "s": "cut into pieces"
+    },
+    {
+      "n": "salt",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "pepper",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "coconut oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "leeks",
+      "q": 2,
+      "u": "item",
+      "s": "trimmed and sliced"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 2,
+      "u": "item",
+      "s": "minced"
+    },
+    {
+      "n": "ginger",
+      "q": 1,
+      "u": "ts",
+      "s": "grated"
+    },
+    {
+      "n": "red curry paste",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "snow peas",
+      "q": 0.5,
+      "u": "cup",
+      "s": "cut in half"
+    },
+    {
+      "n": "pomegranate juice",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "coconut milk",
+      "q": 14,
+      "u": "oz"
+    },
+    {
+      "n": "lime",
+      "q": 1,
+      "u": "item",
+      "s": "juiced and zest grated"
+    },
+    {
+      "n": "pomegranate arils",
+      "q": 0.33,
+      "u": "cup"
+    },
+    {
+      "n": "cilantro",
+      "q": 2,
+      "u": "tbs",
+      "s": "chopped"
+    },
+    {
+      "n": "jasmine rice",
+      "q": 1.5,
+      "u": "cup"
+    },
+    {
+      "n": "light canned coconut milk",
+      "q": 1.5,
+      "u": "cup"
+    },
+    {
+      "n": "coconut water",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "coconut oil",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "salt",
+      "q": 0.25,
+      "u": "ts"
+    },
+    {
+      "n": "pomegranate arils",
+      "q": 0.33,
+      "u": "cup"
+    }
+  ]
+}
