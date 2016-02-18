@@ -1,0 +1,45 @@
+{
+  "recipe-name": "Shrimp salad",
+  "url": "https://www.freeletics.com/en/nutrition/guides/burn_fat/recipes/shrimp_salad",
+  "portions": 1,
+  "description": "\"\"",
+  "time": 30,
+  "in": [
+    {
+      "n": "shrimp",
+      "q": 150,
+      "u": "g",
+      "state": "cooked"
+    },
+    {
+      "n": "eggs",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "pickles",
+      "q": 100,
+      "u": "g"
+    },
+    {
+      "n": "radish",
+      "q": 100,
+      "u": "g"
+    },
+    {
+      "n": "parsley",
+      "q": 1,
+      "u": "bunch"
+    },
+    {
+      "n": "lettuce",
+      "q": 70,
+      "u": "g"
+    },
+    {
+      "n": "lemon",
+      "q": 0.5,
+      "u": "item"
+    }
+  ]
+}
