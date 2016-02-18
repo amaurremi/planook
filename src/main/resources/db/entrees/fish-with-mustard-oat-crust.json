@@ -1,0 +1,55 @@
+{
+  "recipe-name": "Fish with mustard-oatmeal crust and spinach",
+  "other-ingredients": [
+    [
+      "salt",
+      "pepper"
+    ]
+  ],
+  "url": "https://www.freeletics.com/en/nutrition/guides/burn_fat/recipes/fish_with_mustard_oatmeal_crust",
+  "portions": 1,
+  "description": "\"\"",
+  "time": 20,
+  "in": [
+    {
+      "n": "White fish",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "oatmeal",
+      "q": 50,
+      "u": "g"
+    },
+    {
+      "n": "mustard",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "lemon",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "spinach",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "cottage cheese",
+      "q": 50,
+      "u": "g"
+    },
+    {
+      "n": "olive oil",
+      "q": 3,
+      "u": "ts"
+    },
+    {
+      "n": "nutmeg",
+      "q": 0.5,
+      "u": "ts"
+    }
+  ]
+}
