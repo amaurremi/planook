@@ -1,0 +1,72 @@
+{
+  "meal": "d",
+  "recipe-name": "California Miso, Avocado, and Lima Bean Salad",
+  "other-ingredients": "",
+  "url": "http://www.101cookbooks.com/archives/annas-california-miso-avocado-salad-recipe.html",
+  "portions": 2,
+  "description": "",
+  "time": 30,
+  "in": [
+    {
+      "n": "brown rice miso paste",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "brown rice vinegar",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "soy sauce",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "lime",
+      "q": 0.5,
+      "u": "item",
+      "s": "juiced"
+    },
+    {
+      "n": "yogurt",
+      "q": 4,
+      "u": "tbs",
+      "s": "loosely chopped"
+    },
+    {
+      "n": "broccoli",
+      "q": 5,
+      "u": "oz",
+      "s": "stems chopped, florets broken into little heads"
+    },
+    {
+      "n": "pumpkin seeds",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "sesame seeds",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "salad leaves",
+      "q": 1,
+      "u": "handful",
+      "s": "washed and dried"
+    },
+    {
+      "n": "avocado",
+      "q": 1,
+      "u": "1",
+      "s": "pitted and halved"
+    },
+    {
+      "n": "white beans or equivelant",
+      "q": 15,
+      "u": "oz",
+      "s": "drained"
+    }
+  ]
+}
