@@ -1,0 +1,61 @@
+{
+  "meal": "b",
+  "recipe-name": "Greens with Halloumi and Egg",
+  "url": "http://whatshouldieatforbreakfasttoday.com/post/88384515650/greens-halloumi-and-egg",
+  "portions": 1,
+  "description": "",
+  "time": 30,
+  "in": [
+    {
+      "n": "cous cous",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "mint",
+      "q": 1,
+      "u": "ts",
+      "s": "shredded"
+    },
+    {
+      "n": "avocado",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "mushrooms",
+      "q": 1,
+      "u": "cup",
+      "s": "fried"
+    },
+    {
+      "n": "asparagus",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "egg",
+      "q": 1,
+      "u": "item",
+      "s": "boiled half hard"
+    },
+    {
+      "n": "halloumi",
+      "q": 30,
+      "u": "g",
+      "s": "fried"
+    },
+    {
+      "n": "spinach",
+      "q": 2,
+      "u": "cup",
+      "s": "fried"
+    },
+    {
+      "n": "pumpkin seeds",
+      "q": 1,
+      "u": "tbs",
+      "s": "fried"
+    }
+  ]
+}
