@@ -27,14 +27,6 @@ object Main {
 
   val parser = new OptionParser[CmdOptions]("scopt") {
 
-    /**
-      * A meal request should be specified in a string as follows:
-      * mpdn,
-      * where m ∈ {b, w, l, d} for breakfast, weekend breakfast, lunch, or dinner
-      *       p ∈ ℕ is the number of people who will eat the meal
-      *       d ∈ ℕ is the number of days for which the meal is needed
-      *       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal
-      */
     implicit val mealRequestRead: scopt.Read[MealRequest] =
       Read.reads(
         s => {
@@ -55,7 +47,8 @@ object Main {
         opts add mealRequest
     } text """A meal request should be specified in a string as follows:
               | mpdn,
-              | where m ∈ {'b', 'w', 'l', 'd'} for breakfast, weekend breakfast, lunch, or dinner
+              | where m ∈ {'b', 'd', 'l', 's', 'p', 'B', 'E'}
+              |           for [b]reakfast, [d]inner, [l]unch or dinner, [s]andwich, sou[p], weekend [B]reakfast, or weekend [E]ntree
               |       p ∈ ℕ is the number of people who will eat the meal
               |       d ∈ ℕ is the number of days for which the meal is needed
               |       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal"""

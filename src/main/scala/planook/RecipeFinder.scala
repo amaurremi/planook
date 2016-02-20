@@ -8,16 +8,24 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
 
   // tip: create recipe json files here: http://www.objgen.com/json
   lazy val breakfasts: Seq[Recipe] = parseJsonFiles("breakfast")
+  lazy val dinners: Seq[Recipe] = parseJsonFiles("dinner")
+  lazy val lunchAndDinner: Seq[Recipe] = parseJsonFiles("lunch-and-dinner")
+  lazy val sandwiches: Seq[Recipe] = parseJsonFiles("sandwiches")
+  lazy val soups: Seq[Recipe] = parseJsonFiles("soups")
+  lazy val weekendEntrees: Seq[Recipe] = parseJsonFiles("weendend-entrees")
   lazy val weekendBreakfasts: Seq[Recipe] = parseJsonFiles("weekend-breakfast")
-  lazy val entrees: Seq[Recipe] = parseJsonFiles("entrees") ++ parseJsonFiles("sandwiches")
 
   def findRecipes(mealRequest: MealRequest): Seq[Recipe] = {
     import Meal._
     import mealRequest._
     val db = mealType match {
         case Breakfast        => breakfasts
+        case Dinner           => dinners
+        case LunchOrDinner    => lunchAndDinner
+        case Sandwich         => sandwiches
+        case Soup             => soups
         case WeekendBreakfast => weekendBreakfasts
-        case _                => entrees
+        case WeekendEntree    => weekendEntrees
     }
     randomRecipes(num, db) map {
       _.getPoritions(people * days)

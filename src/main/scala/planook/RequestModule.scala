@@ -5,9 +5,12 @@ object RequestModule {
   object Meal extends Enumeration {
     type Meal = Value
     val Breakfast = Value("b")
-    val WeekendBreakfast = Value("w")
-    val Lunch = Value("l")
+    val LunchOrDinner = Value("l")
     val Dinner = Value("d")
+    val Sandwich = Value("s")
+    val Soup = Value("p")
+    val WeekendBreakfast = Value("B")
+    val WeekendEntree = Value("E")
   }
 
   import Meal._
