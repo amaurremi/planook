@@ -126,6 +126,7 @@ trait RecipeModule {
     def shortString: String =
       s"""
          |$name
+         |$portions portions
          |$url
        """.stripMargin
 
