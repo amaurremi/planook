@@ -11,8 +11,8 @@
   "in": [
     {
       "n": "potatoes",
-      "q": 2,
-      "u": "item",
+      "q": 300,
+      "u": "g",
       "s": "peeled and cut into 1-inch cubes"
     },
     {

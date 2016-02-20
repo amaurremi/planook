@@ -13,8 +13,8 @@
   "in": [
     {
       "n": "potatoes",
-      "q": 2,
-      "u": "item"
+      "q": 300,
+      "u": "g"
     },
     {
       "n": "butter",
