@@ -12,7 +12,7 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
   lazy val lunchAndDinner: Seq[Recipe] = parseJsonFiles("lunch-and-dinner")
   lazy val sandwiches: Seq[Recipe] = parseJsonFiles("sandwiches")
   lazy val soups: Seq[Recipe] = parseJsonFiles("soups")
-  lazy val weekendEntrees: Seq[Recipe] = parseJsonFiles("weendend-entrees")
+  lazy val weekendEntrees: Seq[Recipe] = parseJsonFiles("weekend-entrees")
   lazy val weekendBreakfasts: Seq[Recipe] = parseJsonFiles("weekend-breakfast")
 
   def findRecipes(mealRequest: MealRequest): Seq[Recipe] = {
