@@ -1,0 +1,51 @@
+{
+  "meal": "b",
+  "recipe-name": "Green Omelette",
+  "url": "http://whatshouldieatforbreakfasttoday.com/post/74493871077/green-omelette",
+  "portions": 1,
+  "description": "",
+  "time": 25,
+  "in": [
+    {
+      "n": "eggs",
+      "q": 3,
+      "u": "item"
+    },
+    {
+      "n": "parmesan",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "green peas",
+      "q": 0.33,
+      "u": "cup"
+    },
+    {
+      "n": "olive oil",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "lemon zest",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "goat cheese",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "butter",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "mint",
+      "q": 1,
+      "u": "tbs",
+      "s": "shredded"
+    }
+  ]
+}
