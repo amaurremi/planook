@@ -3,8 +3,6 @@ package planook
 import planook.RequestModule.Meal.Meal
 import planook.RequestModule.{Meal, MealRequest}
 
-import scala.collection.breakOut
-
 object RecipeFinder extends RecipeModule with JsonRecipe {
 
   // tip: create recipe json files here: http://www.objgen.com/json
@@ -42,7 +40,8 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
         case WeekendEntree    => weekendEntrees
     }
     randomRecipes(num, db, exclude) map {
-      CreatedRecipe(_, people * days, mealType, num)
+      case (recipe, id) =>
+        CreatedRecipe(recipe, people * days, mealType, id)
     }
   }
 
@@ -92,10 +91,13 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
 
   /**
     * Chooses `n` different random recipes from a data base
+    * and returns each recipe mapped to its index (i.e. "id") in the directory
     */
-  private[this] def randomRecipes(n: Int, db: Seq[OriginalRecipe], exclude: Set[Int]): Seq[OriginalRecipe] = {
+  private[this] def randomRecipes(n: Int, db: Seq[OriginalRecipe], exclude: Set[Int]): Seq[(OriginalRecipe, Int)] = {
     val randomIds   = scala.util.Random.shuffle(db.indices.toList)
     val notExcluded = randomIds filterNot exclude.contains
-    (notExcluded take n map db)(breakOut)
+    val ids = notExcluded take n
+    val recipes = ids map db
+    recipes zip ids
   }
 }

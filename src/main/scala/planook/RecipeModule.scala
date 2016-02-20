@@ -6,6 +6,7 @@ import argonaut.Argonaut._
 import argonaut.DecodeJson
 import org.joda.time.Period
 import org.joda.time.format.PeriodFormatterBuilder
+import planook.RequestModule.Meal
 import planook.RequestModule.Meal.Meal
 
 trait RecipeModule {
@@ -142,7 +143,7 @@ trait RecipeModule {
     def shortString: String =
       s"""
          |$name
-         |$newPortions portions
+         |${Meal.fullName(mealType)} for $newPortions portions
          |$url
        """.stripMargin
 
@@ -157,6 +158,7 @@ trait RecipeModule {
          |${otherIngredients mkString "\n"}
          |
          |Cooking time: ${formatter print cookingTime.normalizedStandard}
+         |Meal type: ${Meal.fullName(mealType)}
          |Portions: $newPortions
          |URL: $url
          |
