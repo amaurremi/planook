@@ -1,7 +1,6 @@
 {
   "meal": "l",
   "recipe-name": "Angie’s Skehan Family Irish Stew",
-  "other-ingredients": "",
   "url": "http://www.donalskehan.com/recipes/angies-skehan-family-irish-stew/",
   "portions": 6,
   "description": "",
@@ -14,8 +13,8 @@
     },
     {
       "n": "lamb shoulder",
-      "q": 1,
-      "u": "kg",
+      "q": 1000,
+      "u": "g",
       "s": "trimmed and cut into 2.5 cm chunks"
     },
     {
@@ -43,8 +42,8 @@
     },
     {
       "n": "beef or lamb stock",
-      "q": 1,
-      "u": "l"
+      "q": 1000,
+      "u": "ml"
     },
     {
       "n": "potatoes",
