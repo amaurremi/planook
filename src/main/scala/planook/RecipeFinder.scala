@@ -21,7 +21,7 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
       case ((recipes, mealToExclude), request) =>
         val mealType         = request.mealType
         val mealExclude      = mealToExclude getOrElse(mealType, Set.empty[Int])
-        val newRecipes       = findRecipes(request, mealExclude)
+        val newRecipes       = recipes ++ findRecipes(request, mealExclude)
         val newExclude       = newRecipes map { _.id }
         val newMealToExclude = mealToExclude + (mealType -> (mealExclude ++ newExclude))
         (newRecipes, newMealToExclude)
