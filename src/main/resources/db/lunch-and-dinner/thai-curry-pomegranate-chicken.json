@@ -7,9 +7,9 @@
   "time": 50,
   "in": [
     {
-      "n": "boneless, skinless chicken breasts",
-      "q": 2,
-      "u": "item",
+      "n": "boneless skinless chicken breast",
+      "q": 12,
+      "u": "oz",
       "s": "cut into pieces"
     },
     {
@@ -109,7 +109,7 @@
       "u": "ts"
     },
     {
-      "n": "pomegranate arils",
+      "n": "pomegranate",
       "q": 0.33,
       "u": "cup"
     }

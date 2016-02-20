@@ -21,7 +21,8 @@ object Data {
     "red pepper", "jalapeno", "jalapeno pepper", "orange pepper", "poblano pepper", "russet potato",
     "fingerling potato", "radicchio", "radish", "iceberg", "iceberg lettuce", "iceberg salad", "scallion", "shallot",
     "zucchini", "grape tomato", "watercress", "yuca", "red bell pepper", "sprout", "curly kale", "green bean",
-    "lamb's lettuce", "berry"
+    "lamb's lettuce", "berry", "yellow bell pepper", "green bell pepper", "spring onion", "pomegranate",
+    "pomegranate seed", "pomegranate aril"
   )
 
   val OBVIOUS = Set(

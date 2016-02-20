@@ -7,7 +7,7 @@
   "time": 40,
   "in": [
     {
-      "n": "aubergines",
+      "n": "eggplants",
       "q": 2,
       "u": "item"
     },
@@ -47,7 +47,7 @@
       "s": "chopped"
     },
     {
-      "n": "ball of mozzarella",
+      "n": "mozzarella ball",
       "q": 125,
       "u": "g",
       "s": "cut"
