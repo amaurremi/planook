@@ -6,7 +6,6 @@ import argonaut.Argonaut._
 import argonaut.DecodeJson
 import org.joda.time.Period
 import org.joda.time.format.PeriodFormatterBuilder
-import planook.RequestModule.Meal
 import planook.RequestModule.Meal.Meal
 
 trait RecipeModule {
@@ -105,52 +104,17 @@ trait RecipeModule {
         } yield Ingredient(n, q, IngredientUnit.withName(u), s)
     )
 
-  case class Recipe(
+  case class OriginalRecipe(
    name: String,
    ingredients: Seq[Ingredient],
    otherIngredients: Seq[String],
    cookingTime: Period,
    portions: Int,
    url: String,
-   description: String,
-   meal: Meal
-  ) {
+   description: String
+  )
 
-    def getPoritions(n: Int): Recipe = {
-      val newIngredients = ingredients map {
-        _ multiply (n.toDouble / portions)
-      }
-      copy(ingredients = newIngredients, portions = n)
-    }
-
-    def shortString: String =
-      s"""
-         |$name
-         |$portions portions
-         |$url
-       """.stripMargin
-
-    override def toString = {
-      val formatter = new PeriodFormatterBuilder()
-        .appendHours().appendSuffix(" h ").appendMinutes().appendSuffix(" min").toFormatter
-      s"""
-          |$name
-          |
-          |Ingredients:
-          |${ingredients mkString "\n"}
-          |${otherIngredients mkString "\n"}
-          |
-          |Cooking time: ${formatter print cookingTime.normalizedStandard}
-          |Portions: $portions
-          |URL: $url
-          |
-          |Instructions:
-          |$description
-          |""".stripMargin
-      }
-  }
-
-  implicit def RecipeDecodeJson: DecodeJson[Recipe] =
+  implicit def RecipeDecodeJson: DecodeJson[OriginalRecipe] =
     DecodeJson(
       c =>
         for {
@@ -162,6 +126,53 @@ trait RecipeModule {
           p <- (c --\ "portions").as[Int]
           u <- (c --\ "url").as[String]
           d <- (c --\ "description").as[String]
-        } yield Recipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, u, d, Meal.withName(m))
+        } yield OriginalRecipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, u, d)
     )
+
+  case class CreatedRecipe private[RecipeModule] (
+    originalRecipe: OriginalRecipe,
+    newPortions: Int,
+    newIngredients: Seq[Ingredient],
+    mealType: Meal,
+    id: Int
+  ) {
+
+    import originalRecipe._
+
+    def shortString: String =
+      s"""
+         |$name
+         |$newPortions portions
+         |$url
+       """.stripMargin
+
+    override def toString = {
+      val formatter = new PeriodFormatterBuilder()
+        .appendHours().appendSuffix(" h ").appendMinutes().appendSuffix(" min").toFormatter
+      s"""
+         |$name
+         |
+         |Ingredients:
+         |${newIngredients mkString "\n"}
+         |${otherIngredients mkString "\n"}
+         |
+         |Cooking time: ${formatter print cookingTime.normalizedStandard}
+         |Portions: $newPortions
+         |URL: $url
+         |
+         |Instructions:
+         |$description
+         |""".stripMargin
+    }
+  }
+
+  object CreatedRecipe {
+
+    def apply(originalRecipe: OriginalRecipe, portions: Int, mealType: Meal, id: Int): CreatedRecipe = {
+      val newIngredients = originalRecipe.ingredients map {
+        _ multiply (portions.toDouble / originalRecipe.portions)
+      }
+      CreatedRecipe(originalRecipe, portions, newIngredients, mealType, id)
+    }
+  }
 }

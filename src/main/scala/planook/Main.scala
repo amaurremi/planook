@@ -9,7 +9,7 @@ object Main extends PrettyPrint {
 
   def main(args: Array[String]) = {
     parser.parse(args, CmdOptions()) foreach { options =>
-      printShort(options.requests flatMap findRecipes)
+      printShort(findAllRecipes(options.requests))
     }
   }
 

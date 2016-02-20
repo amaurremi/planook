@@ -10,15 +10,15 @@ import scalaz.\/
 
 trait JsonRecipe extends RecipeModule {
 
-  def parseJsonFiles(db: String): Seq[Recipe] = {
+  def parseJsonFiles(db: String): Seq[OriginalRecipe] = {
     val path: Path = Paths.get(s"src/main/resources/db/$db")
     val files = Files.newDirectoryStream(path)
     (files map jsonRecipe)(breakOut)
   }
 
-  def jsonRecipe(path: Path): Recipe = {
+  def jsonRecipe(path: Path): OriginalRecipe = {
     val string = new String(Files.readAllBytes(path))
-    val decoded: \/[\/[String, (String, CursorHistory)], Recipe] = Parse.decode[Recipe](string)
+    val decoded: \/[\/[String, (String, CursorHistory)], OriginalRecipe] = Parse.decode[OriginalRecipe](string)
     if (decoded.isRight) decoded.toOption.get
     else throw new UnsupportedOperationException(
       s"""invalid recipe file ${path.getFileName}

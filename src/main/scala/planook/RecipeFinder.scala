@@ -1,5 +1,6 @@
 package planook
 
+import planook.RequestModule.Meal.Meal
 import planook.RequestModule.{Meal, MealRequest}
 
 import scala.collection.breakOut
@@ -7,15 +8,28 @@ import scala.collection.breakOut
 object RecipeFinder extends RecipeModule with JsonRecipe {
 
   // tip: create recipe json files here: http://www.objgen.com/json
-  lazy val breakfasts: Seq[Recipe] = parseJsonFiles("breakfast")
-  lazy val dinners: Seq[Recipe] = parseJsonFiles("dinner")
-  lazy val lunchAndDinner: Seq[Recipe] = parseJsonFiles("lunch-and-dinner")
-  lazy val sandwiches: Seq[Recipe] = parseJsonFiles("sandwiches")
-  lazy val soups: Seq[Recipe] = parseJsonFiles("soups")
-  lazy val weekendEntrees: Seq[Recipe] = parseJsonFiles("weekend-entrees")
-  lazy val weekendBreakfasts: Seq[Recipe] = parseJsonFiles("weekend-breakfast")
+  lazy val breakfasts: Seq[OriginalRecipe] = parseJsonFiles("breakfast")
+  lazy val dinners: Seq[OriginalRecipe] = parseJsonFiles("dinner")
+  lazy val lunchAndDinner: Seq[OriginalRecipe] = parseJsonFiles("lunch-and-dinner")
+  lazy val sandwiches: Seq[OriginalRecipe] = parseJsonFiles("sandwiches")
+  lazy val soups: Seq[OriginalRecipe] = parseJsonFiles("soups")
+  lazy val weekendEntrees: Seq[OriginalRecipe] = parseJsonFiles("weekend-entrees")
+  lazy val weekendBreakfasts: Seq[OriginalRecipe] = parseJsonFiles("weekend-breakfast")
 
-  def findRecipes(mealRequest: MealRequest): Seq[Recipe] = {
+  def findAllRecipes(requests: Seq[MealRequest]): Seq[CreatedRecipe] = {
+    val result = requests.foldLeft((Seq.empty[CreatedRecipe], Map.empty[Meal, Set[Int]])) {
+      case ((recipes, mealToExclude), request) =>
+        val mealType         = request.mealType
+        val mealExclude      = mealToExclude getOrElse(mealType, Set.empty[Int])
+        val newRecipes       = findRecipes(request, mealExclude)
+        val newExclude       = newRecipes map { _.id }
+        val newMealToExclude = mealToExclude + (mealType -> (mealExclude ++ newExclude))
+        (newRecipes, newMealToExclude)
+    }
+    result._1
+  }
+
+  def findRecipes(mealRequest: MealRequest, exclude: Set[Int]): Seq[CreatedRecipe] = {
     import Meal._
     import mealRequest._
     val db = mealType match {
@@ -27,15 +41,15 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
         case WeekendBreakfast => weekendBreakfasts
         case WeekendEntree    => weekendEntrees
     }
-    randomRecipes(num, db) map {
-      _.getPoritions(people * days)
+    randomRecipes(num, db, exclude) map {
+      CreatedRecipe(_, people * days, mealType, num)
     }
   }
 
   import IngredientUnit._
 
-  def shoppingList(recipes: Seq[Recipe], printObvious: Boolean = false): Iterable[Ingredient] = {
-    val ingredients = recipes flatMap { _.ingredients }
+  def shoppingList(recipes: Seq[CreatedRecipe], printObvious: Boolean = false): Iterable[Ingredient] = {
+    val ingredients = recipes flatMap { _.newIngredients }
     val map = ingredients.foldLeft(Map.empty[String, Amount]) {
       case (oldMap, ingr) =>
         val name = ingr.name
@@ -79,8 +93,9 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
   /**
     * Chooses `n` different random recipes from a data base
     */
-  private[this] def randomRecipes(n: Int, db: Seq[Recipe]): Seq[Recipe] =
-    (scala.util.Random.shuffle(db.indices.toList) take n map {
-      db(_)
-    })(breakOut)
+  private[this] def randomRecipes(n: Int, db: Seq[OriginalRecipe], exclude: Set[Int]): Seq[OriginalRecipe] = {
+    val randomIds   = scala.util.Random.shuffle(db.indices.toList)
+    val notExcluded = randomIds filterNot exclude.contains
+    (notExcluded take n map db)(breakOut)
+  }
 }

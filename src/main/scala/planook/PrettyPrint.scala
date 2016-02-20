@@ -4,7 +4,7 @@ import planook.RecipeFinder._
 
 trait PrettyPrint {
 
-  def printLong(recipes: Seq[Recipe]): Unit = {
+  def printLong(recipes: Seq[CreatedRecipe]): Unit = {
     val string =
       s"""
        |${sort(recipes) mkString "\n***\n"}
@@ -13,7 +13,7 @@ trait PrettyPrint {
     println(string)
   }
 
-  def printShort(recipes: Seq[Recipe]): Unit = {
+  def printShort(recipes: Seq[CreatedRecipe]): Unit = {
     val string =
       s"""
          |${sort(recipes) map { _.shortString } mkString ""}
@@ -22,14 +22,14 @@ trait PrettyPrint {
     println(string)
   }
 
-  private[this] def shoppingListString(recipes: Seq[Recipe]): String =
+  private[this] def shoppingListString(recipes: Seq[CreatedRecipe]): String =
     s"""
        |Shopping List:
        |${shoppingList(recipes) mkString "\n"}
      """.stripMargin
 
-  private[this] def sort(recipes: Seq[Recipe]): Seq[Recipe] =
+  private[this] def sort(recipes: Seq[CreatedRecipe]): Seq[CreatedRecipe] =
     recipes sortBy {
-      _.meal
+      _.mealType
     }
 }
