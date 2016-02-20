@@ -1,0 +1,54 @@
+{
+  "meal": "d",
+  "recipe-name": "Thai Zucchini Soup",
+  "other-ingredients": "",
+  "url": "http://www.101cookbooks.com/archives/thai-zucchini-soup-recipe.html",
+  "portions": 4,
+  "description": "",
+  "time": 30,
+  "in": [
+    {
+      "n": "coconut oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "shallots",
+      "q": 1,
+      "u": "cup",
+      "s": "sliced"
+    },
+    {
+      "n": "green curry paste",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "coconut milk",
+      "q": 14,
+      "u": "oz"
+    },
+    {
+      "n": "zucchini",
+      "q": 6,
+      "u": "item",
+      "s": "loosely chopped"
+    },
+    {
+      "n": "water",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "lime",
+      "q": 1,
+      "u": "item",
+      "s": "juiced"
+    },
+    {
+      "n": "brown rice",
+      "q": 1,
+      "u": "cup"
+    }
+  ]
+}
