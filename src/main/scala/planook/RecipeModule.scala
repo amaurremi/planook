@@ -6,6 +6,8 @@ import argonaut.Argonaut._
 import argonaut.DecodeJson
 import org.joda.time.Period
 import org.joda.time.format.PeriodFormatterBuilder
+import planook.RequestModule.Meal
+import planook.RequestModule.Meal.Meal
 
 trait RecipeModule {
 
@@ -110,7 +112,8 @@ trait RecipeModule {
    cookingTime: Period,
    portions: Int,
    url: String,
-   description: String
+   description: String,
+   meal: Meal
   ) {
 
     def getPoritions(n: Int): Recipe = {
@@ -119,6 +122,12 @@ trait RecipeModule {
       }
       copy(ingredients = newIngredients, portions = n)
     }
+
+    def shortString: String =
+      s"""
+         |$name
+         |$url
+       """.stripMargin
 
     override def toString = {
       val formatter = new PeriodFormatterBuilder()
@@ -144,6 +153,7 @@ trait RecipeModule {
     DecodeJson(
       c =>
         for {
+          m <- (c --\ "meal").as[String]
           n <- (c --\ "recipe-name").as[String]
           i <- (c --\ "in").as[List[Ingredient]]
           o <- (c --\ "other-ingredients").as[Option[List[String]]]
@@ -151,6 +161,6 @@ trait RecipeModule {
           p <- (c --\ "portions").as[Int]
           u <- (c --\ "url").as[String]
           d <- (c --\ "description").as[String]
-        } yield Recipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, u, d)
+        } yield Recipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, u, d, Meal.withName(m))
     )
 }

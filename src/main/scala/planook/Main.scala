@@ -3,19 +3,13 @@ package planook
 import planook.RequestModule.{Meal, MealRequest}
 import scopt.{OptionParser, Read}
 
-object Main {
+object Main extends PrettyPrint {
+
+  import RecipeFinder._
 
   def main(args: Array[String]) = {
-    import RecipeFinder._
     parser.parse(args, CmdOptions()) foreach { options =>
-      val recipes = options.requests flatMap findRecipes
-      val output = s"""
-          |${recipes mkString "\n***\n"}
-          |
-          |Shopping List:
-          |${shoppingList(recipes) mkString "\n"}
-        """.stripMargin
-      println(output)
+      printShort(options.requests flatMap findRecipes)
     }
   }
 
