@@ -8,7 +8,6 @@ trait PrettyPrint {
     val string =
       s"""
        |${sort(recipes) mkString "\n***\n"}
-       |
        |${shoppingListString(recipes)}
         """.stripMargin
     println(string)
@@ -17,8 +16,7 @@ trait PrettyPrint {
   def printShort(recipes: Seq[Recipe]): Unit = {
     val string =
       s"""
-         |${sort(recipes) map { _.shortString } mkString "\n\n"}
-         |
+         |${sort(recipes) map { _.shortString } mkString ""}
          |${shoppingListString(recipes)}
        """.stripMargin
     println(string)
