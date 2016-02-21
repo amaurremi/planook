@@ -1,0 +1,312 @@
+{
+  "in": [
+    {
+      "n": [
+        "bell pepper",
+        "red bell pepper",
+        "yellow bell pepper"
+      ],
+      "u": "item",
+      "q": 1,
+      "p": 2.6
+    },
+    {
+      "n": [
+        "curry paste",
+        "red curry paste",
+        "green curry paste"
+      ],
+      "p": 4.99
+    },
+    {
+      "n": [
+        "coconut water"
+      ],
+      "p": 2.5
+    },
+    {
+      "n": [
+        "sesame",
+        "sesame seed",
+        "sesame seeds"
+      ],
+      "p": 2.99
+    },
+    {
+      "n": [
+        "plum tomatoes",
+        "whole plum tomatoes"
+      ],
+      "q": 14,
+      "u": "oz",
+      "p": 2.49
+    },
+    {
+      "n": [
+        "butter",
+        "unsalted butter",
+        "salted butter"
+      ],
+      "p": "5.99"
+    },
+    {
+      "n": [
+        "eggs",
+        "large eggs"
+      ],
+      "u": "item",
+      "q": 18,
+      "p": 5.29
+    },
+    {
+      "n": [
+        "sour cream"
+      ],
+      "q": 250,
+      "u": "ml",
+      "p": 2.49
+    },
+    {
+      "n": [
+        "chicken broth",
+        "chicken stock"
+      ],
+      "q": 500,
+      "u": "ml",
+      "p": 4.99
+    },
+    {
+      "n": [
+        "eggplant",
+        "aubergine",
+        "eggplants",
+        "aubergines"
+      ],
+      "u": "item",
+      "q": 1,
+      "p": 1.5
+    },
+    {
+      "n": [
+        "nectarine",
+        "nectarines"
+      ],
+      "q": 1,
+      "u": "item",
+      "p": 1.2
+    },
+    {
+      "n": [
+        "strawberries"
+      ],
+      "q": 1,
+      "u": "lb",
+      "p": 5.99
+    },
+    {
+      "n": [
+        "avocado",
+        "avocadoes"
+      ],
+      "u": "item",
+      "q": 1,
+      "p": 2
+    },
+    {
+      "n": [
+        "lemon",
+        "lemons"
+      ],
+      "q": 1,
+      "u": "item",
+      "p": 1.2
+    },
+    {
+      "n": [
+        "pomegranate juice"
+      ],
+      "u": "ml",
+      "q": 500,
+      "p": 4.99
+    },
+    {
+      "n": [
+        "leek",
+        "leeks"
+      ],
+      "u": "item",
+      "q": 3,
+      "p": 4.99
+    },
+    {
+      "n": [
+        "raspberry",
+        "raspberries"
+      ],
+      "u": "pint",
+      "q": 0.5,
+      "p": 4.99
+    },
+    {
+      "n": [
+        "grape tomatoes",
+        "cherry tomatoes"
+      ],
+      "q": 10,
+      "u": "oz",
+      "p": 2.28
+    },
+    {
+      "n": [
+        "blackberry",
+        "blackberries"
+      ],
+      "u": "g",
+      "q": 170,
+      "p": 3.99
+    },
+    {
+      "n": [
+        "arugula",
+        "baby arugula",
+        "rocket"
+      ],
+      "u": "ml",
+      "q": 1000,
+      "p": 3.49
+    },
+    {
+      "n": [
+        "pomegranate"
+      ],
+      "u": "item",
+      "q": 1,
+      "p": 3.99
+    },
+    {
+      "n": [
+        "mushrooms"
+      ],
+      "q": 1,
+      "u": "cup",
+      "p": 1.5
+    },
+    {
+      "n": [
+        "lettuce"
+      ],
+      "q": 1,
+      "u": "item",
+      "p": 2.49
+    },
+    {
+      "n": [
+        "dill"
+      ],
+      "p": 2.49
+    },
+    {
+      "n": [
+        "snow peas"
+      ],
+      "p": 2.99
+    },
+    {
+      "n": [
+        "parsley",
+        "flat-leaf parsley",
+        "flat leaf parsley"
+      ],
+      "p": 1.99
+    },
+    {
+      "n": [
+        "sprouts",
+        "broccoli sprouts"
+      ],
+      "p": 1.99
+    },
+    {
+      "n": [
+        "radish",
+        "radishes"
+      ],
+      "p": 1.99
+    },
+    {
+      "n": [
+        "bananas",
+        "banana"
+      ],
+      "p": 2.52,
+      "u": "item",
+      "q": "6"
+    },
+    {
+      "n": [
+        "green onion",
+        "green onions",
+        "spring onion",
+        "spring onions"
+      ],
+      "u": "cup",
+      "q": 2,
+      "p": 1.29
+    },
+    {
+      "n": [
+        "lime",
+        "limes"
+      ],
+      "p": 0.55,
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": [
+        "shrimp",
+        "cooked shrimp"
+      ],
+      "p": 7.99,
+      "u": "g",
+      "q": "340"
+    },
+    {
+      "n": [
+        "feta",
+        "feta cheese"
+      ],
+      "p": 4.99,
+      "q": 185,
+      "u": "g"
+    },
+    {
+      "n": [
+        "basil"
+      ],
+      "p": 2.99,
+      "u": "cup",
+      "q": 2
+    },
+    {
+      "n": [
+        "coriander",
+        "cilantro",
+        "fresh cilantro",
+        "fresh coriander"
+      ],
+      "u": "2",
+      "q": 2,
+      "p": 2.99
+    },
+    {
+      "n": [
+        "thyme",
+        "fresh thyme"
+      ],
+      "q": 2,
+      "u": "cup",
+      "p": 2.99
+    }
+  ]
+}
