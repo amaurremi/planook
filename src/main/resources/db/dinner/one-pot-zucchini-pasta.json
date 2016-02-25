@@ -1,0 +1,54 @@
+{
+  "meal": "d",
+  "recipe-name": "One Pot Zucchini Mushroom Pasta",
+  "url": "http://damndelicious.net/2014/06/13/one-pot-zucchini-mushroom-pasta/?utm_source=feedly&utm_reader=feedly&utm_medium=rss&utm_campaign=one-pot-zucchini-mushroom-pasta",
+  "portions": 4,
+  "description": "",
+  "time": 20,
+  "in": [
+    {
+      "n": "spaghetti",
+      "q": 1,
+      "u": "lb"
+    },
+    {
+      "n": "cremini mushrooms",
+      "q": 1,
+      "u": "lb",
+      "s": "thinly sliced"
+    },
+    {
+      "n": "zucchini",
+      "q": 2,
+      "u": "item",
+      "s": "thinly sliced and quartered"
+    },
+    {
+      "n": "peas",
+      "q": 0.66,
+      "u": "cup"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 2,
+      "u": "item",
+      "s": "thinly sliced"
+    },
+    {
+      "n": "thyme",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "parmesan cheese",
+      "q": 0.33,
+      "u": "cup",
+      "s": "grated"
+    },
+    {
+      "n": "heavy cream",
+      "q": 0.25,
+      "u": "cup"
+    }
+  ]
+}
