@@ -1,0 +1,39 @@
+{
+  "recipe-name": "Parsley root soup",
+  "url": "https://www.freeletics.com/en/nutrition/guides/burn_fat/recipes/parsley_root_soup_get_lean",
+  "portions": 1,
+  "description": "\"\"",
+  "time": 30,
+  "in": [
+    {
+      "n": "parsley root",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "red onion",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "cottage cheese",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "parsley",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "apple",
+      "q": 0.5,
+      "u": "item"
+    }
+  ]
+}
