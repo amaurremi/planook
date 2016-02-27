@@ -1,0 +1,49 @@
+{
+  "recipe-name": "Apple radicchio salad",
+  "url": "https://www.freeletics.com/en/nutrition/guides/burn_fat/recipes/apple_radicchio_salad_get_lean",
+  "portions": 1,
+  "description": "",
+  "time": 15,
+  "in": [
+    {
+      "n": "chicken breast",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "radicchio",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "beet root",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "apple",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "sunflower seeds",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "mustard",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "yogurt",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "lemon juice",
+      "q": 1,
+      "u": "ts"
+    }
+  ]
+}
