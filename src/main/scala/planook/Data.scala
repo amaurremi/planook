@@ -37,12 +37,12 @@ object Data {
         val  lastIndex = p.length - 1
         val (prefix, last) = (p substring (0, lastIndex), p substring lastIndex)
         val plural = last match {
-          case "o" => prefix + "oes"
-          case "y" if !(p matches ".*[aeiou]y$") => prefix + "ies"
-          case "s" => p
-          case _ if (p endsWith "ch") || (p endsWith "sh")  => p + "es"
-          case _   => p + "s"
+          case "o"                                          => Seq(prefix + "oes", prefix + "os")
+          case "y" if !(p matches ".*[aeiou]y$")            => Seq(prefix + "ies")
+          case "s"                                          => Seq(p)
+          case _ if (p endsWith "ch") || (p endsWith "sh")  => Seq(p + "es")
+          case _                                            => Seq(p + "s")
          }
-        Seq(p, plural)
+        p +: plural
     })(breakOut)
 }
