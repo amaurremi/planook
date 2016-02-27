@@ -1,0 +1,86 @@
+{
+  "recipe-name": "No recipe curry",
+  "url": "http://www.greenkitchenstories.com/the-no-recipe-curry/",
+  "portions": 6,
+  "portions-min": "6",
+  "description": "",
+  "time": 60,
+  "in": [
+    {
+      "n": "butter",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "onion",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "garlic",
+      "q": 3,
+      "u": "item"
+    },
+    {
+      "n": "ginger toot",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "ground turmeric",
+      "q": 2,
+      "u": "ts"
+    },
+    {
+      "n": "cumin",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "sweet potato",
+      "q": 500,
+      "u": "g"
+    },
+    {
+      "n": "broccoli",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "cauliflower",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "coconut milk",
+      "q": 2,
+      "u": "can"
+    },
+    {
+      "n": "tofu",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "spinach",
+      "q": 2,
+      "u": "cup"
+    },
+    {
+      "n": "line",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "cashew",
+      "q": 0.5,
+      "u": "cup",
+      "s": "roasted"
+    },
+    {
+      "n": "quinoa",
+      "q": 2,
+      "u": "cup"
+    }
+  ]
+}
