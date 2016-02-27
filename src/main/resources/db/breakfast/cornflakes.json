@@ -1,0 +1,24 @@
+{
+  "recipe-name": "Cereal with Berries",
+  "url": "",
+  "portions": 2,
+  "description": "",
+  "time": 5,
+  "in": [
+    {
+      "n": "cereal",
+      "q": 4,
+      "u": "cup"
+    },
+    {
+      "n": "milk",
+      "q": 4,
+      "u": "cup"
+    },
+    {
+      "n": "berries",
+      "q": 1,
+      "u": "cup"
+    }
+  ]
+}
