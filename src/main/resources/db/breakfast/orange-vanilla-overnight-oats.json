@@ -1,0 +1,48 @@
+{
+  "recipe-name": "Orange & Vanilla Overnight Oats",
+  "url": "http://www.greenkitchenstories.com/orange-vanilla-overnight-oats/",
+  "other-ingredients": [
+    "fresh fruit for serving"
+  ],
+  "portions": 4,
+  "description": "",
+  "time": 20,
+  "in": [
+    {
+      "n": "rolled oats",
+      "q": 400,
+      "u": "ml"
+    },
+    {
+      "n": "vanilla extract",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "orange juice",
+      "q": 400,
+      "u": "ml"
+    },
+    {
+      "n": "sunflower seeds",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "pumpkin seeds",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "water",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "shredded coconut",
+      "q": 4,
+      "u": "tbs",
+      "s": "lightly toasted"
+    }
+  ]
+}
