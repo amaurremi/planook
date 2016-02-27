@@ -1,0 +1,56 @@
+{
+  "recipe-name": "Pasta with Smashed Tomatoes, Peaches & Mozzarella",
+  "url": "http://www.greenkitchenstories.com/summer-pasta-with-smashed-tomatoes-peaches-mozzarella/",
+  "portions": 4,
+  "portions-min": "2",
+  "description": "",
+  "time": 30,
+  "in": [
+    {
+      "n": "garlic cloves",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "capers",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "tomatoes",
+      "q": 1,
+      "u": "lb"
+    },
+    {
+      "n": "basil",
+      "q": 1,
+      "u": "cup",
+      "s": "chopped"
+    },
+    {
+      "n": "pasta",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "pine nuts",
+      "q": 0.33,
+      "u": "cup"
+    },
+    {
+      "n": "nectarines",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "mozzarella",
+      "q": 7,
+      "u": "oz"
+    },
+    {
+      "n": "arugula",
+      "q": 1,
+      "u": "cup"
+    }
+  ]
+}
