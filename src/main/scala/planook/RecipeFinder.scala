@@ -41,9 +41,10 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
         case WeekendBreakfast => weekendBreakfasts
         case WeekendEntree    => weekendEntrees
     }
+    val requestedPortions = people * days
     randomRecipes(db, exclude) collect {
-      case (recipe, id) if people >= recipe.portions =>
-        CreatedRecipe(recipe, people * days, mealType, id)
+      case (recipe, id) if requestedPortions >= recipe.portions =>
+        CreatedRecipe(recipe, requestedPortions, mealType, id)
     } take num
   }
 
