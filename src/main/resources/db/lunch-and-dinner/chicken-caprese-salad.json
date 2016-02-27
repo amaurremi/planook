@@ -1,0 +1,75 @@
+{
+  "recipe-name": "Avocado Caprese Chicken Salad with Balsamic Vinaigrette",
+  "other-ingredients": "",
+  "url": "http://www.joyfulhealthyeats.com/15-minute-avocado-caprese-chicken-salad-with-balsamic-vinaigrette/#_a5y_p=3638253",
+  "portions": 2,
+  "description": "",
+  "time": 20,
+  "in": [
+    {
+      "n": "boneless skinless chicken breast",
+      "q": 12,
+      "u": "oz"
+    },
+    {
+      "n": "fresh mozzarella balls",
+      "q": 0.5,
+      "u": "cup",
+      "s": "halved"
+    },
+    {
+      "n": "avocado",
+      "q": 1,
+      "u": "item",
+      "s": "diced"
+    },
+    {
+      "n": "spring mix salad",
+      "q": 4,
+      "u": "cup"
+    },
+    {
+      "n": "cherry tomatoes",
+      "q": 0.5,
+      "u": "cup",
+      "s": "halved"
+    },
+    {
+      "n": "basil",
+      "q": 0.25,
+      "u": "cup",
+      "s": "diced"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 1,
+      "u": "unite",
+      "s": "minced"
+    },
+    {
+      "n": "dry basil",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "dijon mustard",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "lemon juice",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "balsamic vinegar",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "olive oil",
+      "q": 0.33,
+      "u": "cup"
+    }
+  ]
+}
