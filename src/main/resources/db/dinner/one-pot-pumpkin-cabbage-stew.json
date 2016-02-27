@@ -1,0 +1,73 @@
+{
+  "recipe-name": "One pot pumpkin cabbage stew",
+  "url": "https://docs.google.com/spreadsheets/d/1hee0VIVC4MuNIeRjGepwL8Zr5PECmQLrV46l0raFTWI/edit?pref=2&pli=1#gid=0",
+  "portions": 4,
+  "portions-min": "4",
+  "description": "",
+  "time": 75,
+  "in": [
+    {
+      "n": "onion",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 4,
+      "u": "item"
+    },
+    {
+      "n": "butternut squash",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "rosemary",
+      "q": 3,
+      "u": "item"
+    },
+    {
+      "n": "lemon",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "small cabbage",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "rice",
+      "q": 1,
+      "u": "cup",
+      "s": "pre-soaked"
+    },
+    {
+      "n": "black eyed peas",
+      "q": 1,
+      "u": "cup",
+      "s": "pre-soaked"
+    },
+    {
+      "n": "vegetable bouillon powder",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "bay leaves",
+      "q": 3,
+      "u": "item",
+      "s": "dried"
+    },
+    {
+      "n": "parsley",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "apple",
+      "q": 1,
+      "u": "item"
+    }
+  ]
+}
