@@ -111,6 +111,7 @@ trait RecipeModule {
    otherIngredients: Seq[String],
    cookingTime: Period,
    portions: Int,
+   minPortions: Int,
    url: String,
    description: String
   )
@@ -124,9 +125,10 @@ trait RecipeModule {
           o <- (c --\ "other-ingredients").as[Option[List[String]]]
           t <- (c --\ "time").as[Int]
           p <- (c --\ "portions").as[Int]
+          m <- (c --\ "portions-min").as[Option[Int]]
           u <- (c --\ "url").as[String]
           d <- (c --\ "description").as[String]
-        } yield OriginalRecipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, u, d)
+        } yield OriginalRecipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, m getOrElse p, u, d)
     )
 
   case class CreatedRecipe private[RecipeModule] (
