@@ -1,0 +1,69 @@
+{
+  "recipe-name": "Baked herb pistachio falafel",
+  "url": "http://www.sproutedkitchen.com/home/2013/5/8/baked-herb-pistachio-falafel.html",
+  "portions": 2,
+  "description": "",
+  "time": 30,
+  "in": [
+    {
+      "n": "mint",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "parsley",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "pistachios",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "chickpeas",
+      "q": 2,
+      "u": "cup"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 3,
+      "u": "item"
+    },
+    {
+      "n": "onion",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "flour",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "baking soda",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "baby tomatoes",
+      "q": 2,
+      "u": "cup"
+    },
+    {
+      "n": "red chile",
+      "q": 0.5,
+      "u": "item"
+    },
+    {
+      "n": "oregano",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "pita bread",
+      "q": 2,
+      "u": "item"
+    }
+  ]
+}
