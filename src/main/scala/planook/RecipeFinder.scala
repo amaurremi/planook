@@ -57,7 +57,7 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
         val name = ingr.name
         oldMap get name match {
           case Some(a@(unit, quantity)) =>
-            unifyUnits(a, (ingr.unit, ingr.quantity)) match {
+            unifyUnits(a, (ingr.unit, ingr.quantity), name) match {
               case Some((newUnit, quantity1, quantity2)) =>
                 oldMap + (normalize(name) -> (newUnit, quantity1 + quantity2))
               case None                                  =>

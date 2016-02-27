@@ -1,109 +1,39 @@
 package planook
 
-import java.text.DecimalFormat
-
 import argonaut.Argonaut._
 import argonaut.DecodeJson
 import org.joda.time.Period
 import org.joda.time.format.PeriodFormatterBuilder
 import planook.RequestModule.Meal
 import planook.RequestModule.Meal.Meal
+import planook.ingredients.{Ingredients, StandardIngredients}
 
-trait RecipeModule {
-
-  object IngredientUnit extends Enumeration {
-    type IngredientUnit = Value
-    type Amount = (IngredientUnit, Double)
-
-    val Gram = Value("g")
-    val Pound = Value("lb")
-    val MilliLiter = Value("ml")
-    val Pint = Value("pint")
-    val Ounce = Value("oz")
-    val Item = Value("item")
-    val Cup = Value("cup")
-    val TableSpoon = Value("tbs")
-    val TeaSpoon = Value("ts")
-    val Can = Value("can")
-    val Slice = Value("slice")
-    val Handful = Value("handful")
-    val Bunch = Value("bunch")
-    val Leaf = Value("leaf")
-
-    def isMass(unit: IngredientUnit): Boolean =
-      Seq(Gram, Pound, Ounce) contains unit
-
-    def isVolume(unit: IngredientUnit): Boolean =
-      Seq(MilliLiter, Cup, TableSpoon, TeaSpoon, Can, Pint) contains unit
-
-    def unifyUnits(amount1: Amount, amount2: Amount): Option[(IngredientUnit, Double, Double)] = {
-      val (u1, q1) = amount1
-      val (u2, q2) = amount2
-      if (u1 == u2)
-        Some(u1, q1, q2)
-      else if (isMass(u1) && isMass(u2))
-        Some(Gram, toGrams(u1, q1), toGrams(u2, q2))
-      else if (isVolume(u1) && isVolume(u2))
-        Some(MilliLiter, toMl(u1, q1), toMl(u2, q2))
-      else None
-    }
-
-    def toGrams(unit: IngredientUnit, quantity: Double): Double = {
-      assert(isMass(unit), s"can't convert $unit to grams")
-      val mult = unit match {
-        case Gram  => 1
-        case Pound => 454
-        case Ounce => 28
-      }
-      mult * quantity
-    }
-
-    def toMl(unit: IngredientUnit, quantity: Double): Double = {
-      assert(isVolume(unit), s"can't convert $unit to ml")
-      val mult = unit match {
-        case MilliLiter => 1
-        case Cup        => 237
-        case TableSpoon => 15
-        case TeaSpoon   => 5
-        case Can        => 400
-        case Pint       => 473
-      }
-      mult * quantity
-    }
-  }
+trait RecipeModule extends Ingredients with StandardIngredients {
 
   import IngredientUnit._
 
-  case class Ingredient(
-   name: String,
-   quantity: Double,
-   unit: IngredientUnit,
-   state: Option[String]
-  ) {
-    def multiply(n: Double): Ingredient = {
-      val newQuantity = n * quantity
-      if (unit == TeaSpoon && newQuantity % 3 == 0)
-        copy(quantity = newQuantity / 3, unit = TableSpoon)
-      else copy(quantity = newQuantity)
-    }
-
-    override def toString = {
-      val unitStr = if (unit == Item) "" else unit.toString + " "
-      val quantityStr = new DecimalFormat("#.#") format quantity
-      s"$name, $quantityStr $unitStr" + (if (state.isDefined) s", ${state.get}" else "")
-    }
+  def unifyUnits(amount1: Amount, amount2: Amount, ingredient: String): Option[(IngredientUnit, Double, Double)] = {
+    val (u1, q1) = amount1
+    val (u2, q2) = amount2
+    if (u1 == u2)
+      Some(u1, q1, q2)
+    else if (isMass(u1) && isMass(u2))
+      Some(Gram, toGrams(u1, q1), toGrams(u2, q2))
+    else if (isVolume(u1) && isVolume(u2))
+      Some(MilliLiter, toMl(u1, q1), toMl(u2, q2))
+    else unifyDifferentUnits(u1, q1, u2, q2, ingredient)
   }
 
-  implicit def IngredientDecodeJson: DecodeJson[Ingredient] =
-    DecodeJson(
-      c =>
-        for {
-          n <- (c --\ "n").as[String]         // name
-          q <- (c --\ "q").as[Double]         // quantity
-          u <- (c --\ "u").as[String]         // unit
-          s <- (c --\ "s").as[Option[String]] // state
-        } yield Ingredient(n, q, IngredientUnit.withName(u), s)
-    )
+  private[this] def unifyDifferentUnits(
+    u1: IngredientUnit,
+    q1: Double,
+    u2: IngredientUnit,
+    q2: Double,
+    ingredient: String
+  ): Option[(IngredientUnit, Double, Double)] =
+    StandardIngredient(ingredient) map {
+      standardIngredient => ???
+    }
 
   case class OriginalRecipe(
    name: String,
