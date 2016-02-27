@@ -119,7 +119,6 @@ trait RecipeModule {
     DecodeJson(
       c =>
         for {
-          m <- (c --\ "meal").as[String]
           n <- (c --\ "recipe-name").as[String]
           i <- (c --\ "in").as[List[Ingredient]]
           o <- (c --\ "other-ingredients").as[Option[List[String]]]
