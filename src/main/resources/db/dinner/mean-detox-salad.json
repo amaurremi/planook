@@ -1,0 +1,125 @@
+{
+  "recipe-name": "The Mean Green Detox Salad",
+  "url": "http://www.halfbakedharvest.com/the-mean-green-detox-salad/",
+  "portions": 4,
+  "description": "",
+  "other-ingredients": [
+    "hemp seeds",
+    "chia seeds"
+  ],
+  "time": 60,
+  "in": [
+    {
+      "n": "tahini",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "soy sauce",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "lemon",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 2,
+      "u": "item",
+      "s": "grated"
+    },
+    {
+      "n": "ginger",
+      "q": 2,
+      "u": "ts",
+      "s": "grated"
+    },
+    {
+      "n": "chickpeas",
+      "q": 2,
+      "u": "cup",
+      "s": "cooked"
+    },
+    {
+      "n": "flaked coconut",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "soy sauce",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "sesame oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "cayenne pepper",
+      "q": 0.25,
+      "u": "ts"
+    },
+    {
+      "n": "Tuscan kale",
+      "q": 4,
+      "u": "cup",
+      "s": "roughly torn"
+    },
+    {
+      "n": "broccoli",
+      "q": 2,
+      "u": "cup"
+    },
+    {
+      "n": "purple cabbage",
+      "q": 0.25,
+      "u": "item",
+      "s": "shredded"
+    },
+    {
+      "n": "parsley",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "cilantro",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "red grapefruits",
+      "q": 2,
+      "u": "item",
+      "s": "segmented"
+    },
+    {
+      "n": "avocados",
+      "q": 2,
+      "u": "item",
+      "s": "sliced or chopped"
+    },
+    {
+      "n": "pine nuts",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "sesame seeds",
+      "q": 2,
+      "u": "ts"
+    },
+    {
+      "n": "nutritional yeast",
+      "q": 1,
+      "u": "tbs"
+    }
+  ]
+}
