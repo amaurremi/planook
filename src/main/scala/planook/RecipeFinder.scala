@@ -3,6 +3,8 @@ package planook
 import planook.RequestModule.Meal.Meal
 import planook.RequestModule.{Meal, MealRequest}
 
+import scala.collection.SeqView
+
 object RecipeFinder extends RecipeModule with JsonRecipe {
 
   // tip: create recipe json files here: http://www.objgen.com/json
@@ -39,10 +41,10 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
         case WeekendBreakfast => weekendBreakfasts
         case WeekendEntree    => weekendEntrees
     }
-    randomRecipes(num, db, exclude) map {
-      case (recipe, id) =>
+    randomRecipes(db, exclude) collect {
+      case (recipe, id) if people >= recipe.portions =>
         CreatedRecipe(recipe, people * days, mealType, id)
-    }
+    } take num
   }
 
   import IngredientUnit._
@@ -93,11 +95,10 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
     * Chooses `n` different random recipes from a data base
     * and returns each recipe mapped to its index (i.e. "id") in the directory
     */
-  private[this] def randomRecipes(n: Int, db: Seq[OriginalRecipe], exclude: Set[Int]): Seq[(OriginalRecipe, Int)] = {
-    val randomIds   = scala.util.Random.shuffle(db.indices.toList)
-    val notExcluded = randomIds filterNot exclude.contains
-    val ids = notExcluded take n
-    val recipes = ids map db
-    recipes zip ids
+  private[this] def randomRecipes(db: Seq[OriginalRecipe], exclude: Set[Int]): SeqView[(OriginalRecipe, Int), Seq[_]] = {
+    val randomIds   = scala.util.Random.shuffle(db.indices.toList).view
+    val notExcluded = (randomIds filterNot exclude.contains).view
+    val recipes: SeqView[RecipeFinder.OriginalRecipe, Seq[_]] = notExcluded map db
+    recipes zip randomIds
   }
 }
