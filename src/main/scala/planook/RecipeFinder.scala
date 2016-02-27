@@ -43,7 +43,7 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
     }
     val requestedPortions = people * days
     randomRecipes(db, exclude) collect {
-      case (recipe, id) if requestedPortions >= recipe.portions =>
+      case (recipe, id) if requestedPortions >= recipe.minPortions =>
         CreatedRecipe(recipe, requestedPortions, mealType, id)
     } take num
   }
@@ -99,7 +99,7 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
   private[this] def randomRecipes(db: Seq[OriginalRecipe], exclude: Set[Int]): SeqView[(OriginalRecipe, Int), Seq[_]] = {
     val randomIds   = scala.util.Random.shuffle(db.indices.toList).view
     val notExcluded = (randomIds filterNot exclude.contains).view
-    val recipes: SeqView[RecipeFinder.OriginalRecipe, Seq[_]] = notExcluded map db
+    val recipes     = notExcluded map db
     recipes zip randomIds
   }
 }
