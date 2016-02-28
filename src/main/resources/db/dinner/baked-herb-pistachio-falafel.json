@@ -7,8 +7,8 @@
   "in": [
     {
       "n": "mint",
-      "q": 1,
-      "u": "item"
+      "q": 0.25,
+      "u": "cup"
     },
     {
       "n": "parsley",
