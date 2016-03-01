@@ -1,0 +1,52 @@
+{
+  "recipe-name": "Braised Pork and Cabbage",
+  "url": "http://www.marthastewart.com/337159/braised-pork-and-cabbage",
+  "portions": 4,
+  "description": "",
+  "time": 60,
+  "in": [
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "bone-in rib pork chops, 8 oz each",
+      "q": 4,
+      "u": "item"
+    },
+    {
+      "n": "onion",
+      "q": 1,
+      "u": "item",
+      "s": "finely chopped"
+    },
+    {
+      "n": "coleslaw mix",
+      "q": 1,
+      "u": "lb"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 1,
+      "u": "item",
+      "s": "minced"
+    },
+    {
+      "n": "cider vinegar",
+      "q": 0.75,
+      "u": "cup"
+    },
+    {
+      "n": "caraway seeds",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "small red potatoes",
+      "q": 0.75,
+      "u": "lb",
+      "s": "sliced 1/4 inch thick"
+    }
+  ]
+}
