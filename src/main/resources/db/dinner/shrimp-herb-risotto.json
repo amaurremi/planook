@@ -1,0 +1,62 @@
+{
+  "recipe-name": "Shrimp and Herb Risotto",
+  "url": "http://www.marthastewart.com/925569/shrimp-and-herb-risotto",
+  "portions": 6,
+  "portions-min": "4",
+  "description": "",
+  "time": 30,
+  "in": [
+    {
+      "n": "butter",
+      "q": 2,
+      "u": "tbs",
+      "s": "divided"
+    },
+    {
+      "n": "yellow onion",
+      "q": 1,
+      "u": "item",
+      "s": "finely chopped"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 2,
+      "u": "item",
+      "s": "minced"
+    },
+    {
+      "n": "arborio or carnaroli rice",
+      "q": 1.5,
+      "u": "cup"
+    },
+    {
+      "n": "chicken broth",
+      "q": 4,
+      "u": "cup",
+      "s": "divided"
+    },
+    {
+      "n": "large shrimp",
+      "q": 1,
+      "u": "lb",
+      "s": "peeled and deveined"
+    },
+    {
+      "n": "parmesan",
+      "q": 0.5,
+      "u": "cup",
+      "s": "grated"
+    },
+    {
+      "n": "parsley",
+      "q": 3,
+      "u": "tbs",
+      "s": "chopped"
+    },
+    {
+      "n": "basil",
+      "q": 3,
+      "u": "tbs"
+    }
+  ]
+}
