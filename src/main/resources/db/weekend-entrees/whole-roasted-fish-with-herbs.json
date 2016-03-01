@@ -1,0 +1,39 @@
+{
+  "recipe-name": "Whole Roasted Fish with Herbs",
+  "url": "http://www.foodnetwork.com/recipes/anne-burrell/whole-roasted-fish-with-herbs-recipe.html",
+  "portions": 2,
+  "description": "",
+  "time": 85,
+  "in": [
+    {
+      "n": "whole fish",
+      "q": 2,
+      "u": "lb"
+    },
+    {
+      "n": "lemon",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "bay leaves",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "parsley",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "garlic clove",
+      "q": 4,
+      "u": "item"
+    },
+    {
+      "n": "dry white wine",
+      "q": 2,
+      "u": "cup"
+    }
+  ]
+}
