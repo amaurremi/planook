@@ -1,0 +1,39 @@
+{
+  "recipe-name": "Hazelnut Crusted Halibut with Garlic Mashed Potatoes",
+  "url": "http://allrecipes.com/recipe/170582/hazelnut-crusted-halibut-with-garlic-mashed-potatoes/",
+  "portions": 2,
+  "description": "",
+  "time": 45,
+  "in": [
+    {
+      "n": "potatoes",
+      "q": 1,
+      "u": "lb"
+    },
+    {
+      "n": "garlic clove",
+      "q": 5,
+      "u": "item"
+    },
+    {
+      "n": "hazelnuts",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "bread crumbs",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "halibut fillet",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "vegetable broth",
+      "q": 3,
+      "u": "tbs"
+    }
+  ]
+}
