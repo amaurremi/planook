@@ -1,0 +1,54 @@
+{
+  "recipe-name": "Flat-Iron Steak Tacos",
+  "url": "http://www.marthastewart.com/314170/flat-iron-steak-tacos",
+  "portions": 4,
+  "portions-min": "2",
+  "description": "",
+  "time": 20,
+  "in": [
+    {
+      "n": "red cabbage",
+      "q": 0.5,
+      "u": "item",
+      "s": "cored and shredded"
+    },
+    {
+      "n": "limes",
+      "q": 2,
+      "u": "item",
+      "s": "juiced"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 1,
+      "u": "item",
+      "s": "minced"
+    },
+    {
+      "n": "flat-iron steaks (8 oz each)",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "cumiin",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "flour tortillas (6 inch)",
+      "q": 8,
+      "u": "item"
+    },
+    {
+      "n": "white cheddar",
+      "q": 1,
+      "u": "cup",
+      "s": "shredded"
+    },
+    {
+      "n": "green salsa",
+      "q": 0.5,
+      "u": "cup"
+    }
+  ]
+}
