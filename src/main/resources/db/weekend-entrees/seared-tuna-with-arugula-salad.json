@@ -1,0 +1,69 @@
+{
+  "recipe-name": "Seared Tuna with Arugula Salad",
+  "url": "http://blog.maggianos.com/2012/03/seared-tuna-with-arugula-salad/",
+  "portions": 2,
+  "description": "",
+  "time": 20,
+  "in": [
+    {
+      "n": "soybean oil",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "tuna steak",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "peppercorn",
+      "q": 2,
+      "u": "tbs"
+    },
+    {
+      "n": "rocket",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "grape tomatoes",
+      "q": 20,
+      "u": "item"
+    },
+    {
+      "n": "parmesan cheese",
+      "q": 2,
+      "u": "ts"
+    },
+    {
+      "n": "beef stock",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "garlic",
+      "q": 3,
+      "u": "item"
+    },
+    {
+      "n": "lemon",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "honey",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "mustard",
+      "q": 0.5,
+      "u": "tbs"
+    },
+    {
+      "n": "worcestershire",
+      "q": 0.3,
+      "u": "ts"
+    }
+  ]
+}
