@@ -1,0 +1,49 @@
+{
+  "recipe-name": "Tomato and Basil Scramble with Fresh Mozzarella",
+  "url": "http://blog.williams-sonoma.com/tomato-and-basil-scramble-with-fresh-mozzarella-2/",
+  "portions": 4,
+  "portions-min": "1",
+  "description": "",
+  "time": 20,
+  "in": [
+    {
+      "n": "olive oil",
+      "q": 2,
+      "u": "ts"
+    },
+    {
+      "n": "shallot",
+      "q": 1,
+      "u": "tbs",
+      "s": "minced"
+    },
+    {
+      "n": "cherry tomatoes",
+      "q": 1,
+      "u": "cup",
+      "s": "halved"
+    },
+    {
+      "n": "eggs",
+      "q": 12,
+      "u": "item"
+    },
+    {
+      "n": "basil",
+      "q": 2,
+      "u": "tbs",
+      "s": "chopped"
+    },
+    {
+      "n": "butter",
+      "q": 1,
+      "u": "tbs"
+    },
+    {
+      "n": "mozzarella",
+      "q": 125,
+      "u": "g",
+      "s": "cubed"
+    }
+  ]
+}
