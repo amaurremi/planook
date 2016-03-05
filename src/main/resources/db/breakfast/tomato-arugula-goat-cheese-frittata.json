@@ -1,0 +1,41 @@
+{
+  "recipe-name": "Tomato, Arugula and Goat Cheese Frittata",
+  "url": "http://blog.williams-sonoma.com/tomato-arugula-and-goat-cheese-frittata/",
+  "portions": 4,
+  "portions-min": "2",
+  "description": "",
+  "time": 20,
+  "in": [
+    {
+      "n": "6",
+      "q": null,
+      "u": "item"
+    },
+    {
+      "n": "milk",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "goat cheese",
+      "q": 125,
+      "u": "g",
+      "s": "crumbled"
+    },
+    {
+      "n": "garlic clove",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "cherry tomatoes",
+      "q": 2,
+      "u": "cup"
+    },
+    {
+      "n": "arugula",
+      "q": 4,
+      "u": "cup"
+    }
+  ]
+}
