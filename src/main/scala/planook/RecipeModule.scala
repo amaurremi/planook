@@ -58,7 +58,7 @@ trait RecipeModule extends Ingredients with StandardIngredients {
           m <- (c --\ "portions-min").as[Option[Int]]
           u <- (c --\ "url").as[String]
           d <- (c --\ "description").as[String]
-        } yield OriginalRecipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, m getOrElse p, u, d)
+        } yield OriginalRecipe(n, i, o.toSeq.flatten, new Period(0, t, 0, 0), p, m getOrElse 1, u, d)
     )
 
   case class CreatedRecipe private[RecipeModule] (
