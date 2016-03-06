@@ -1,0 +1,77 @@
+{
+  "recipe-name": "Crepes with Berries and Ricotta",
+  "url": "http://www.williams-sonoma.com/recipe/crepes-with-berries-and-ricotta.html",
+  "portions": 2,
+  "portions-min": "1",
+  "description": "",
+  "time": 60,
+  "in": [
+    {
+      "n": "milk",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "eggs",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "all-purpose flour",
+      "q": 0.5,
+      "u": "cup"
+    },
+    {
+      "n": "canola oil",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "salt",
+      "q": 0.5,
+      "u": "ts"
+    },
+    {
+      "n": "lemon zest",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "strawberries",
+      "q": 1,
+      "u": "pint",
+      "s": "hulled and quartered"
+    },
+    {
+      "n": "blueberries",
+      "q": 1,
+      "u": "pint"
+    },
+    {
+      "n": "raspberries",
+      "q": 1,
+      "u": "pint"
+    },
+    {
+      "n": "lemon",
+      "q": 1.5,
+      "u": "ts",
+      "s": "juiced"
+    },
+    {
+      "n": "sugar",
+      "q": 3,
+      "u": "tbs"
+    },
+    {
+      "n": "ricotta cheese",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "unsulted butter",
+      "q": 4,
+      "u": "ts"
+    }
+  ]
+}

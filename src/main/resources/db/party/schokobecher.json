@@ -1,0 +1,30 @@
+{
+  "recipe-name": "Schokobecher",
+  "url": "http://www.kuechengoetter.de/rezepte/Pudding-Cremes/Schokobecher-444088.html",
+  "portions": 2,
+  "portions-min": "1",
+  "description": "",
+  "time": 180,
+  "in": [
+    {
+      "n": "bitter chocolate (60%)",
+      "q": 80,
+      "u": "g"
+    },
+    {
+      "n": "cream (highest % fat)",
+      "q": 200,
+      "u": "g"
+    },
+    {
+      "n": "vanilla sugar packet",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "hazelnut crocant",
+      "q": 3,
+      "u": "tbs"
+    }
+  ]
+}

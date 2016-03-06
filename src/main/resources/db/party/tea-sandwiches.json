@@ -1,0 +1,57 @@
+{
+  "recipe-name": "Tea sandwiches",
+  "url": "http://entertaining.about.com/video/Tea-Sandwiches.htm",
+  "portions": 5,
+  "portions-min": "2",
+  "description": "",
+  "time": 30,
+  "in": [
+    {
+      "n": "sandwich bread packages",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "small cucumbers",
+      "q": 3,
+      "u": "item"
+    },
+    {
+      "n": "cream cheese",
+      "q": 1,
+      "u": "cup"
+    },
+    {
+      "n": "garlic cloves",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "lemon",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "eggs",
+      "q": 8,
+      "u": "item",
+      "s": "hard-boiled"
+    },
+    {
+      "n": "mayonnaise",
+      "q": 0.33,
+      "u": "cup"
+    },
+    {
+      "n": "Dijon mustard",
+      "q": 1,
+      "u": "ts"
+    },
+    {
+      "n": "green onions",
+      "q": 1,
+      "u": "tbs",
+      "s": "chopped"
+    }
+  ]
+}
