@@ -1,0 +1,44 @@
+{
+  "recipe-name": "Whole Baked Trout with Herb Salsa",
+  "url": "http://theviewfromgreatisland.com/whole-baked-trout-with-herb-salsa/",
+  "portions": 2,
+  "description": "",
+  "time": 45,
+  "in": [
+    {
+      "n": "whole trout",
+      "q": 2,
+      "u": "item"
+    },
+    {
+      "n": "shallot",
+      "q": 1,
+      "u": "item"
+    },
+    {
+      "n": "parsley",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "chives",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "thyme",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "dill",
+      "q": 0.25,
+      "u": "cup"
+    },
+    {
+      "n": "lemon",
+      "q": 3,
+      "u": "item"
+    }
+  ]
+}
