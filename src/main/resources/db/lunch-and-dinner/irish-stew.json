@@ -2,6 +2,7 @@
   "recipe-name": "Angie’s Skehan Family Irish Stew",
   "url": "http://www.donalskehan.com/recipes/angies-skehan-family-irish-stew/",
   "portions": 6,
+  "portions-min": 4,
   "description": "",
   "time": 120,
   "in": [

@@ -12,9 +12,9 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
   lazy val dinners: Seq[OriginalRecipe] = parseJsonFiles("dinner")
   lazy val lunchAndDinner: Seq[OriginalRecipe] = parseJsonFiles("lunch-and-dinner")
   lazy val sandwiches: Seq[OriginalRecipe] = parseJsonFiles("sandwiches")
-  lazy val soups: Seq[OriginalRecipe] = parseJsonFiles("soups")
   lazy val weekendEntrees: Seq[OriginalRecipe] = parseJsonFiles("weekend-entrees")
   lazy val weekendBreakfasts: Seq[OriginalRecipe] = parseJsonFiles("weekend-breakfast")
+  lazy val party: Seq[OriginalRecipe] = parseJsonFiles("party")
 
   def findAllRecipes(requests: Seq[MealRequest]): Seq[CreatedRecipe] = {
     val result = requests.foldLeft((Seq.empty[CreatedRecipe], Map.empty[Meal, Set[Int]])) {
@@ -36,10 +36,9 @@ object RecipeFinder extends RecipeModule with JsonRecipe {
         case Breakfast        => breakfasts
         case Dinner           => dinners
         case LunchOrDinner    => lunchAndDinner
-        case Sandwich         => sandwiches
-        case Soup             => soups
         case WeekendBreakfast => weekendBreakfasts
         case WeekendEntree    => weekendEntrees
+        case Party            => party
     }
     val requestedPortions = people * days
     randomRecipes(db, exclude) collect {

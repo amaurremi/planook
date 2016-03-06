@@ -41,8 +41,8 @@ object Main extends PrettyPrint {
         opts add mealRequest
     } text """A meal request should be specified in a string as follows:
               | mpdn,
-              | where m ∈ {'b', 'd', 'l', 's', 'p', 'B', 'E'}
-              |           for [b]reakfast, [d]inner, [l]unch or dinner, [s]andwich, sou[p], weekend [B]reakfast, or weekend [E]ntree
+              | where m ∈ {'b', 'd', 'l', 'B', 'E', 'y'}
+              |           for [b]reakfast, [d]inner, [l]unch or dinner, weekend [B]reakfast, weekend [E]ntree, or [p]arty
               |       p ∈ ℕ is the number of people who will eat the meal
               |       d ∈ ℕ is the number of days for which the meal is needed
               |       n ∈ ℕ is optional and represents the number of times we want to cook that type of meal"""

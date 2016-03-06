@@ -8,9 +8,8 @@ object RequestModule {
     val WeekendBreakfast = Value("B")
     val LunchOrDinner = Value("l")
     val Dinner = Value("d")
-    val Sandwich = Value("s")
-    val Soup = Value("p")
     val WeekendEntree = Value("E")
+    val Party = Value("p")
 
     def fullName(meal: Meal): String =
       meal match {
@@ -18,9 +17,8 @@ object RequestModule {
         case WeekendBreakfast => "weekend breakfast"
         case LunchOrDinner    => "lunch/dinner"
         case Dinner           => "dinner"
-        case Sandwich         => "sandwich"
-        case Soup             => "soup"
         case WeekendEntree    => "weekend lunch/dinner"
+        case Party            => "party"
       }
   }
 
